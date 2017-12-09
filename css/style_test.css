@@ -19,7 +19,7 @@ body {
     left:0; right:0;
     top:0; bottom:7em;
     margin:auto;
-  /*border: 1px solid;*/
+  border: 1px solid;
 
   animation: logo 2s ease-in-out infinite alternate, appearing 5s;
   -webkit-animation: logo 5s ease-in-out infinite alternate, appearing 5s;
