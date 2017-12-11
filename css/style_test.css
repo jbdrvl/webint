@@ -12,8 +12,8 @@ body {
 }
 
 .logo{
-  width: 28vh;
-  height: 28vh;
+  width: 40vh;
+  height: 40vh;
 
   position:absolute; /*it can be fixed too*/
     left:0; right:0;
