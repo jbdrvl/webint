@@ -5,59 +5,42 @@
     <title>NappyVoc</title>
 
     <!-- CSS links -->
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
     <link rel="stylesheet" href="css/style_test.css" type="text/css"/>
-    <!--<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>-->
+
     <!-- Google Font links -->
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
 
   </head>
   <body>
-
-    <div id="names">
+    <div id="web-title">
       <h1>NappyVoc</h1>
     </div>
 
-    <div class="logo">
-      <img src="img/logo2.svg" alt="Nappy's Logo">
+    <div id="logo">
+      <img id="logo-img" src="img/logo2.svg" alt="Nappy's Logo">
     </div>
 
-    <div class="login-form">
+    <div class="box" id="login-form">
       <div class="login-title">
         <p>Welcome back</p>
       </div>
-      <div class="container">
+      <div class="form-container">
         <form action="index.html">
           <input type="text" class="username" name="username" id="username" placeholder="Username" required="" autofocus="" />
           <input type="password" class="password" name="password" id="password" placeholder="Password" required="" autofocus="" />
-          <button class="login"  name="Submit" value="Login" type="Submit" href='#'>Login</button>
+          <button class="login" name="Submit" value="Login" type="Submit" href='#'>Login</button>
         </form>
       </div>
       <div class="data_login">
-        <p>Register here | Lost password</p>
+        <p><a href="register.html">Register here</a> | Lost password</p>
       </div>
     </div>
     <div class="copyright">
       <p>Copyright © NappyVoc - EURECOM webint project</p>
     </div>
 
-  <script>
-    var colors = [
-      "#CDB07E", //orange
-      "#7EB7CD", //blue
-      "#B56CB4", //pink
-      "#6C92B5", //blue grayscale
-      "#6CB588", //green
-      "#87B56C", //green2
-      "#D19C93"
-    ];
-    var colourIndex = Math.floor(Math.random() * colors.length);
-    // on récupère l'élément
-    var elmt = document.getElementById("all");
-
-    // on modifie son style
-    elmt.style.backgroundColor = colors[colourIndex];
-
-  </script>
+    <!--SCRIPTS GOES HERE -->
+    <script type="text/jscript" src="js/color.js"></script>
   </body>
-
 </html>
