@@ -72,32 +72,29 @@
         transform: translate(-50%, -50%)}
 }
 
-.login-title{
+#login-title{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 45%;
   color : white;
-  /*background-color: white;*/
   display: table;
 }
-.login-title p {
+#login-title p {
   font-size: 2.5em;
   font-weight: bold;
   display: table-cell;
   vertical-align: middle;
 }
-
-.form-container{
+#form-container{
   position: absolute;
   top: 45%;
   left: 0;
   width: 100%;
   height: 33%;
 }
-
-.username {
+#username {
   position: absolute;
   top: 0;
   left: -2px;
@@ -112,10 +109,10 @@
   padding-left: 2%;
   outline: none;
 }
-.username:focus {
+#username:focus {
   background-color: rgba(0,0,0,0.1);
 }
-.password {
+#password {
   margin-left: 1px;
   position: absolute;
   top: 0;
@@ -130,10 +127,10 @@
   font-size: 25px;
   outline: none;
 }
-.password:focus {
+#password:focus {
   background-color: rgba(0,0,0,0.1);
 }
-.login {
+#login {
   margin-left: 1em;
   position: absolute;
   top: 0;
@@ -142,16 +139,25 @@
   height: 100%;
   background-color: inherit;
   border: 2px solid white;
+  border-radius: 0;
   color: white;
   text-align: center;
   text-decoration: none;
   font-size: 25px;
   font-family: inherit;
+  -webkit-transition: border-radius 0.5s;
 }
-.login:hover{
+
+#login:hover{
   background-color: rgba(0,0,0,0.1);
+  border-radius: 2em;
+  font-weight: 900;
+  cursor: pointer;
+  background-color: white;
+  color: all.background-color;
+  -webkit-transition: font-weight .5s, border-radius 0.5s, background-color 1s;
 }
-.data_login{
+#data_login{
   position: absolute;
   top: 78%;
   left: 0;
@@ -160,20 +166,20 @@
   color : white;
   display: table;
 }
-.data_login p {
+#data_login p {
   font-size: 0.8em;
   display: table-cell;
   vertical-align: middle;
 }
-.copyright{
+
+#copyright{
   width: 100%;
   position: absolute;
   top: 93%;
   left: 0;
   display: table;
 }
-
-.copyright p {
+#copyright p {
   text-align: center;
   opacity: 0;
 
@@ -201,34 +207,34 @@
     padding-top: 1em;
     font-size: 1.5em;
   }
-  .copyright p{
+  #copyright p{
     font-size: 2em;
   }
-  .login-form{
+  #login-form{
     top: 70%;
 
     width: 90%;
     height: 47%;
     padding:0;
   }
-  .login-title{
+  #login-title{
     height: 20%;
   }
-  .login-title p {
+  #login-title p {
     font-size: 3em;
     animation-delay: 4s;
   }
-  .container{
+  #container{
     top: 20%;
     height: 60%;
   }
-  .container .username {
+  #username {
     width: 90%;
     height: 40%;
     padding-left: 10%;
     font-size: 3em;
   }
-  .container .password {
+  #password {
     position: absolute;
     top: 40%;
     left: 0;
@@ -238,7 +244,7 @@
     padding-left: 10%;
     font-size: 3em;
   }
-  .container .login {
+  #login {
     position: absolute;
     top: 80%;
     left: 0;
@@ -246,11 +252,11 @@
     height: 30%;
     font-size: 3em;
   }
-  .data_login{
+  #data_login{
     top: 86%;
     height: 14%;
   }
-  .data_login p {
+  #data_login p {
     font-size: 3em;
   }
 }

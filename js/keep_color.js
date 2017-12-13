@@ -1,6 +1,6 @@
 var colors = [
-  "#CDB07E", //orange
-  "#7EB7CD", //blue
+  "#4ABDAC", //orange
+  "#272BAD", //blue
   "#B56CB4", //pink
   "#6C92B5", //blue grayscale
   "#6CB588", //green
