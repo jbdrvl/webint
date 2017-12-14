@@ -1,6 +1,6 @@
 #logo{
-  width: 40vh;
-  height: 40vh;
+  width: 45vh;
+  height: 45vh;
 
   position:absolute; /*it can be fixed too*/
     left:0; right:0;
@@ -8,8 +8,8 @@
     margin:auto;
     /*border: 1px solid;*/
 
-  animation: logo_animation 2s ease-in-out infinite alternate, appearing 3s;
-  -webkit-animation: logo_animation 5s ease-in-out infinite alternate, appearing 3s;
+  animation: appearing 3s;
+  -webkit-animation: appearing 3s;
 }
 
 @keyframes logo_animation {
@@ -145,7 +145,7 @@
   text-decoration: none;
   font-size: 25px;
   font-family: inherit;
-  -webkit-transition: border-radius 0.5s;
+  -webkit-transition: font-weight .5s, border-radius 0.5s, background-color 1s;
 }
 
 #login:hover{
