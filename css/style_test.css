@@ -112,6 +112,7 @@
 #username:focus {
   background-color: rgba(0,0,0,0.1);
 }
+
 #password {
   margin-left: 1px;
   position: absolute;
@@ -188,6 +189,7 @@
   animation: appearing 2s;
   animation-delay: 2.5s;
   animation-fill-mode:forwards;
+  
 
 }
 
