@@ -66,15 +66,3 @@ button:hover{
 #my-profile-button button {
   width: 100%;
 }
-
-#copyright{
-  width: 100%;
-  color: white;
-  position: absolute;
-  top: 90%;
-  left: 0;
-  display: table;
-}
-#copyright p {
-  text-align: center;
-}
