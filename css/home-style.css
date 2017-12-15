@@ -1,0 +1,71 @@
+button {
+  text-align: center;
+  font-size: 1.8em;
+  height: 100%;
+  background-color: inherit;
+  border: 2px solid white;
+  border-radius: 0;
+  color: white;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 1.8em;
+  padding: 8px;
+  -webkit-transition: font-weight .5s, border-radius 0.5s, background-color 1s;
+}
+
+button:hover{
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 2em;
+  cursor: pointer;
+  background-color: white;
+  color: all.background-color;
+  -webkit-transition: font-weight .5s, border-radius 0.5s, background-color 1s;
+}
+
+.logo {
+    width: 40vh;
+    height: 40vh;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#web-title h1{
+  font-size: 5em;
+  margin: 0;
+  text-align: center;
+  font-weight:bold;
+}
+
+#choice {
+  width: 90%;
+  margin: 12px auto;
+}
+
+#choice table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+#choice td {
+  padding: 20px 50px;
+}
+
+#choice button {
+  width: 100%;
+}
+
+#my-profile {
+  width: 90%;
+  margin: 0 auto;
+  padding: 15px;
+
+}
+
+#my-profile-button {
+  width: 40%;
+  margin: 0 auto;
+}
+
+#my-profile-button button {
+  width: 100%;
+}

@@ -28,6 +28,18 @@ a:hover{
   border-radius: 1em;
 }
 
+#copyright{
+  width: 100%;
+  color: white;
+  position: absolute;
+  top: 90%;
+  left: 0;
+  display: table;
+}
+#copyright p {
+  text-align: center;
+}
+
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    white;
 }

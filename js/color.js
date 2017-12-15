@@ -17,9 +17,13 @@ var login = document.getElementById("login");
 var signin = document.getElementById("signin");
 var signup = document.getElementById("signup");
 
+var buttons = document.getElementsByClassName('my-button');
+
+
 // on modifie son style
 html.style.backgroundColor = colors[colourIndex];
 
+try{
 signin.onmouseover = function()
 {
   this.style.borderBottomColor = second_color[colourIndex];
@@ -30,7 +34,6 @@ signin.onmouseout = function()
   this.style.borderBottomColor = "white";
   this.style.borderBottomWidth = "2px";
 };
-
 signup.onmouseover = function()
 {
   this.style.borderBottomColor = second_color[colourIndex];
@@ -41,13 +44,35 @@ signup.onmouseout = function()
   this.style.borderBottomColor = "white";
   this.style.borderBottomWidth = "2px";
 };
+} catch(err) {
+  console.log('[DEBUG] did not find element with ID name: signup/signin');
+}
 
-//récupère également la couleur pour le bouton login
-login.onmouseover = function()
-{
-  this.style.color = colors[colourIndex];
-};
-login.onmouseout = function()
-{
-  this.style.color = "white";
-};
+
+try {
+  login.onmouseover = function()
+  {
+    this.style.color = colors[colourIndex];
+  }
+  login.onmouseout = function()
+  {
+    this.style.color = "white";
+  }
+} catch(err) {
+  console.log('[DEBUG] did not find element with ID name: login');
+}
+//same as login for button.my-button
+try {
+  for (var i=0; i<buttons.length; i++) {
+    buttons[i].onmouseover = function()
+    {
+      this.style.color = colors[colourIndex];
+    }
+    buttons[i].onmouseout = function()
+    {
+      this.style.color = "white";
+    }
+  }
+} catch(err) {
+  console.log('[DEBUG] did not find any button');
+}
