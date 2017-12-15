@@ -27,22 +27,18 @@ try{
 signin.onmouseover = function()
 {
   this.style.borderBottomColor = second_color[colourIndex];
-  this.style.borderBottomWidth = "4px";
 };
 signin.onmouseout = function()
 {
   this.style.borderBottomColor = "white";
-  this.style.borderBottomWidth = "2px";
 };
 signup.onmouseover = function()
 {
   this.style.borderBottomColor = second_color[colourIndex];
-  this.style.borderBottomWidth = "4px";
 };
 signup.onmouseout = function()
 {
   this.style.borderBottomColor = "white";
-  this.style.borderBottomWidth = "2px";
 };
 } catch(err) {
   console.log('[DEBUG] did not find element with ID name: signup/signin');
