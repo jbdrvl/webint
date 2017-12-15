@@ -1,11 +1,7 @@
 var colors = [
-  "#4ABDAC", //orange
-  "#272BAD", //blue
-  "#B56CB4", //pink
-  "#6C92B5", //blue grayscale
-  "#6CB588", //green
-  "#87B56C", //green2
-  "#D19C93"
+  "#4ABDAC",
+  "#272BAD",
+  "#B56CB4"
 ];
 var colourIndex = localStorage.getItem("color");
 // on récupère l'élément

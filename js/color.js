@@ -1,7 +1,7 @@
 var colors = [
-  "#4ABDAC", //orange
-  "#272BAD", //blue
-  "#B56CB4" //pink
+  "#4ABDAC",
+  "#272BAD",
+  "#B56CB4"
 ];
 
 var second_color = [

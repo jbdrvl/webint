@@ -11,7 +11,6 @@
   animation: appearing 3s;
   -webkit-animation: appearing 3s;
 }
-
 @keyframes logo_animation {
     0% {
         transform: scale(1.0);
@@ -61,7 +60,6 @@
   -webkit-animation: login_coming_up 3s;
   animation: login_coming_up 3s;
 }
-
 @keyframes login_coming_up {
     from {opacity: 0;
     transform: translateY(50000px);
@@ -87,6 +85,45 @@
   display: table-cell;
   vertical-align: middle;
 }
+#buttons_container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 45%;
+  display: table;
+}
+#signin_button{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 40%;
+  height: 55%;
+  transform: translate(0, -50%);
+  font: inherit;
+  font-size: 1.5em;
+  background-color: inherit;
+  color: inherit;
+  border: none;
+  border-bottom: 2px solid white;
+
+}
+#signup_button{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  height: 55%;
+  transform: translate(0, -50%);
+  font: inherit;
+  font-size: 1.5em;
+  background-color: inherit;
+  color: inherit;
+  border: none;
+  border-bottom: 2px solid white;
+}
+
+
 #form-container{
   position: absolute;
   top: 45%;
@@ -112,7 +149,6 @@
 #username:focus {
   background-color: rgba(0,0,0,0.1);
 }
-
 #password {
   margin-left: 1px;
   position: absolute;
@@ -148,7 +184,6 @@
   font-family: inherit;
   -webkit-transition: font-weight .5s, border-radius 0.5s, background-color 1s;
 }
-
 #login:hover{
   background-color: rgba(0,0,0,0.1);
   border-radius: 2em;
@@ -172,7 +207,6 @@
   display: table-cell;
   vertical-align: middle;
 }
-
 #copyright{
   width: 100%;
   position: absolute;
@@ -192,7 +226,6 @@
 
 
 }
-
 @keyframes appearing {
     from {opacity: 0;}
     to {opacity: 1;}
