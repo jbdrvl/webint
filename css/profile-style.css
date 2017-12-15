@@ -1,7 +1,11 @@
+img {
+  max-width:100%;
+  max-height:100%;
+}
+
 #header table {
   margin: 0 auto;
 }
-
 
 .logo {
     width: 23vh;
@@ -21,7 +25,7 @@
   padding: 20px;
 }
 
-#content table {
+#content>table {
   width: 100%;
   table-layout: fixed;
   border: 2px solid white;
@@ -41,13 +45,44 @@
 }
 
 /* STATS COL */
-#overall-average, #last-ten-average, #username, #rank, #email {
+#overall-average, #last-ten-average, #username, #rank, #email, .score {
   float: right;
 }
 
 
 /* ID CARD COL */
+
+#profile-pic {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.col-content table {
+  width: 100%;
+}
+
+#email {
+  font-size: 0.8em;
+}
+
 /* SCORES */
+
+.quizz-infos {
+  margin-bottom: 2px;
+}
+
+.date {
+  margin-top: 0;
+  margin-bottom: 3px;
+  font-size: 0.8em;
+}
+
+.score-infos {
+  margin-top: 0;
+  font-size: 1.1em;
+}
+
+/* copyrights */
 
 #copyright{
   width: 100%;
