@@ -10,6 +10,7 @@ button {
   font-family: inherit;
   font-size: 1.8em;
   padding: 8px;
+  -webkit-transition: font-weight .5s, border-radius 0.5s, background-color 1s;
 }
 
 button:hover{
@@ -18,6 +19,7 @@ button:hover{
   cursor: pointer;
   background-color: white;
   color: all.background-color;
+  -webkit-transition: font-weight .5s, border-radius 0.5s, background-color 1s;
 }
 
 .logo {
@@ -56,6 +58,7 @@ button:hover{
   width: 90%;
   margin: 0 auto;
   padding: 15px;
+
 }
 
 #my-profile-button {
