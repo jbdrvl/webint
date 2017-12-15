@@ -93,7 +93,7 @@
   height: 45%;
   display: table;
 }
-#signin_button{
+#signin{
   position: absolute;
   top: 50%;
   left: 0;
@@ -106,9 +106,10 @@
   color: inherit;
   border: none;
   border-bottom: 2px solid white;
+  z-index: 100;
 
 }
-#signup_button{
+#signup{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -121,6 +122,7 @@
   color: inherit;
   border: none;
   border-bottom: 2px solid white;
+  z-index: 100;
 }
 
 
