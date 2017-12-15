@@ -1,0 +1,59 @@
+#header table {
+  margin: 0 auto;
+}
+
+
+.logo {
+    width: 23vh;
+    height: 23vh;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#web-title h1{
+  font-size: 5em;
+  margin: 0;
+  text-align: center;
+  font-weight:bold;
+}
+
+#content {
+  padding: 20px;
+}
+
+#content table {
+  width: 100%;
+  table-layout: fixed;
+  border: 2px solid white;
+}
+
+#content td {
+  padding: 10px;
+}
+
+.col-title {
+  text-align: center;
+  border-bottom: 2px solid white;
+}
+
+.col-content {
+  padding: 15px;
+}
+
+/* STATS COL */
+#overall-average, #last-ten-average, #username, #rank, #email {
+  float: right;
+}
+
+
+/* ID CARD COL */
+/* SCORES */
+
+#copyright{
+  width: 100%;
+  color: white;
+  display: table;
+}
+#copyright p {
+  text-align: center;
+}
