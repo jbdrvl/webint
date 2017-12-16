@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>NappyVoc - Create a new sheet</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/profile-style.css">
+
+    <link rel="stylesheet" href="css/add.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
@@ -16,25 +17,25 @@
           <img id="logo-img" src="img/logo2.svg" alt="NappyVoc Logo">
         </td>
         <td>
-          <h1 id=" ">My New sheet</h1>
+          <h1 id="web-title" align="center">My New sheet</h1>
         </td>
       </table>
     </div>
     <div id=titre align="center">
     	<tr>
 			<td align="center">Titre</td>
-			<td align="center"><input type="text" name="elt1" /></td>
+			<td align="center"><input type="text" id="elt1" name="elt1" /></td>
 		</tr>
 	</div>
 	<br>
 	<br>
 	<div id=language align="center">
     	<tr>
-			<td align="center">language</td>
-			<form >
+			<td align="center" id=titrelanguage>language</td>
+			<form>
 				<p>
 <!-- une balise select ou input ne peut pas être imbriquée directement dans form -->
-     				<select name=language align="center">
+     				<select name=language align="center" id=language2>
           			<option >German</option>
           			<option >Spanish</option>
           			<option >French</option>
@@ -51,13 +52,17 @@
 		<tr>
 			<input type="text" name="Word1" id="word1" placeholder="Word" required="" autofocus="" />
             <input type="text" name="translation1" id="trans1" placeholder="translation" required="" autofocus="" />
-			<td><button type="button" onclick="addField()" >+</button></td>
+			<td><button type="button" id =plusbut onclick="addField()" >+</button></td>
 		</tr>
+	</div>
+<br>
+<br>
+<div id=subbut align=center>
+	<button type="button" id=submitbut >Submit</button>	
+</div>
 
 
-
-
-<div id="copyright">
+<div id="copyright" align=center>
     <p>Copyright © NappyVoc - EURECOM webint project</p>
 </div>
 
