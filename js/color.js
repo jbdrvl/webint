@@ -18,7 +18,7 @@ var signin = document.getElementById("signin");
 var signup = document.getElementById("signup");
 
 var buttons = document.getElementsByClassName('my-button');
-
+var secColors = document.getElementsByClassName('sec-colors');
 
 // on modifie son style
 html.style.backgroundColor = colors[colourIndex];
@@ -71,4 +71,12 @@ try {
   }
 } catch(err) {
   console.log('[DEBUG] did not find any button');
+}
+
+try {
+  for (var i=0; i<secColors.length; i++) {
+    secColors[i].style.color=second_color[colourIndex];
+  }
+} catch(err) {
+  console.log('[DEBUG] did not find any field with className = sec-colors');
 }
