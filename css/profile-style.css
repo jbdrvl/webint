@@ -41,12 +41,21 @@ img {
 }
 
 .col-content {
-  padding: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 0;
+  text-align: left;
+}
+
+.col-content td {
+  vertical-align: top;
 }
 
 /* STATS COL */
 #overall-average, #last-ten-average, #username, #rank, #email, .score {
   float: right;
+  color: white
 }
 
 
@@ -57,12 +66,12 @@ img {
   max-height: 150px;
 }
 
-.col-content table {
+.col-content table, #user-infos {
   width: 100%;
 }
 
-#email {
-  font-size: 0.8em;
+#biblio {
+  color: white;
 }
 
 /* SCORES */
@@ -80,6 +89,13 @@ img {
 .score-infos {
   margin-top: 0;
   font-size: 1.1em;
+}
+
+.col-content nav ul {
+  height:300px;
+  padding-right: 10px;
+  overflow:hidden;
+  overflow-y:scroll;
 }
 
 /* copyrights */
