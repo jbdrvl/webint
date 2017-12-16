@@ -14,36 +14,9 @@ localStorage.setItem("color",colourIndex);
 // on récupère l'élément
 var html = document.getElementById("all");
 var login = document.getElementById("login");
-var signin = document.getElementById("signin");
-var signup = document.getElementById("signup");
-
 var buttons = document.getElementsByClassName('my-button');
-
-
 // on modifie son style
 html.style.backgroundColor = colors[colourIndex];
-
-try{
-signin.onmouseover = function()
-{
-  this.style.borderBottomColor = second_color[colourIndex];
-};
-signin.onmouseout = function()
-{
-  this.style.borderBottomColor = "white";
-};
-signup.onmouseover = function()
-{
-  this.style.borderBottomColor = second_color[colourIndex];
-};
-signup.onmouseout = function()
-{
-  this.style.borderBottomColor = "white";
-};
-} catch(err) {
-  console.log('[DEBUG] did not find element with ID name: signup/signin');
-}
-
 
 try {
   login.onmouseover = function()

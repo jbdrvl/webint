@@ -107,7 +107,9 @@
   border: none;
   border-bottom: 3px solid white;
   z-index: 100;
-
+}
+#signin:hover{
+  font-weight: 900;
 }
 #signup{
   position: absolute;
@@ -124,8 +126,9 @@
   border-bottom: 3px solid white;
   z-index: 100;
 }
-
-
+#signup:hover{
+  font-weight: 900;
+}
 #form-container{
   position: absolute;
   top: 45%;
