@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html id="all">
+  <head>
+    <meta charset="utf-8">
+    <title>NappyVoc - Create a new sheet</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/add.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+  </head>
+  <body>
+    <div id="header">
+      <table>
+        <td class="logo">
+          <img id="logo-img" src="img/logo2.svg" alt="NappyVoc Logo">
+        </td>
+        <td>
+          <h1 id="web-title" align="center">My New sheet</h1>
+        </td>
+      </table>
+    </div>
+    <div id=titre align="center">
+    	<tr>
+			<td align="center">Titre</td>
+			<td align="center"><input type="text" id="elt1" name="elt1" /></td>
+		</tr>
+	</div>
+	<br>
+	<br>
+	<div id=language align="center">
+    	<tr>
+			<td align="center" id=titrelanguage>language</td>
+			<form>
+				<p>
+<!-- une balise select ou input ne peut pas être imbriquée directement dans form -->
+     				<select name=language align="center" id=language2>
+          			<option >German</option>
+          			<option >Spanish</option>
+          			<option >French</option>
+          			<option >Chinese</option>
+     				</select>
+				</p>
+			</form>
+
+		</tr>
+	</div>
+	<br>
+	<br>
+	<div id=words align="center">	
+		<tr>
+			<input type="text" name="Word1" id="word1" placeholder="Word" required="" autofocus="" />
+            <input type="text" name="translation1" id="trans1" placeholder="translation" required="" autofocus="" />
+			<td><button type="button" id =plusbut onclick="addField()" >+</button></td>
+		</tr>
+	</div>
+<br>
+<br>
+<div id=subbut align=center>
+	<button type="button" id=submitbut >Submit</button>	
+</div>
+
+
+<div id="copyright" align=center>
+    <p>Copyright © NappyVoc - EURECOM webint project</p>
+</div>
+
+<!--SCRIPTS GOES HERE -->
+    <script type="text/jscript" src="js/add.js"></script>
+    <!--<script type="text/jscript" src="js/anime.min.js"></script>
+    <script type="text/jscript" src="js/animation.js"></script>-->
