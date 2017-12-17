@@ -14,11 +14,20 @@ localStorage.setItem("color",colourIndex);
 // on récupère l'élément
 var html = document.getElementById("all");
 var login = document.getElementById("login");
+var label_u = document.getElementById("username_label");
+var label_p = document.getElementById("password_label");
 var buttons = document.getElementsByClassName('my-button');
 var secColors = document.getElementsByClassName('sec-colors');
 
 // on modifie son style
 html.style.backgroundColor = colors[colourIndex];
+
+try{
+  label_u.style.backgroundColor = colors[colourIndex];
+  label_p.style.backgroundColor = colors[colourIndex];
+} catch(err) {
+  console.log('[DEBUG] did not find element with ID name: login');
+}
 
 try {
   login.onmouseover = function()

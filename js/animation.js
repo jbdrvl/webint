@@ -15,3 +15,13 @@ function leaveLogo() { animateLogo(1.0, 1500, 500) };
 
 logo_img.addEventListener('mouseenter', enterLogo, false);
 logo_img.addEventListener('mouseleave', leaveLogo, false);
+
+$('input').on('focusin', function() {
+  $(this).parent().find('label').addClass('active');
+});
+
+$('input').on('focusout', function() {
+  if (!this.value) {
+    $(this).parent().find('label').removeClass('active');
+  }
+});

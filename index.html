@@ -34,14 +34,21 @@
         <p>Welcome back</p>
       </div>
       <div id="form-container">
-        <form action="home.html">
-          <input type="text" name="username" id="username" placeholder="Username" required="" autofocus="" />
-          <input type="password" name="password" id="password" placeholder="Password" required="" autofocus="" />
+        <div id="username-container">
+          <label id="username_label" for="username">Username</label>
+          <input type="text" id="username" />
+        </div>
+
+        <div id="password-container">
+          <label id="password_label" for="password">Password</label>
+          <input type="password" name="password" id="password" />
+        </div>
+
           <button id="login" name="Submit" value="Login" type="Submit" href='home.html'>LOGIN</button>
         </form>
       </div>
       <div id="data_login">
-        <p><a href="register.html">Register here</a> | Lost password</p>
+        <p>Lost password</p>
       </div>
     </div>
     <div id="copyright">
@@ -51,6 +58,7 @@
     <!--SCRIPTS GOES HERE -->
     <script type="text/jscript" src="js/color.js"></script>
     <script type="text/jscript" src="js/anime.min.js"></script>
+    <script type="text/jscript" src="js/jquery.min.js"></script>
     <script type="text/jscript" src="js/animation.js"></script>
     <script type="text/jscript" src="js/tabin.js"></script>
   </body>
