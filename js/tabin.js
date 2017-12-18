@@ -22,4 +22,6 @@ if (tab == 1){
   signin.style.fontWeight="900";
 }
 
-signup.onclick
+if (tab == 2){
+  
+}

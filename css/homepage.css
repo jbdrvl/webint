@@ -141,7 +141,7 @@
   position: absolute;
   top: 0;
   left: -2px;
-  width: 38%;
+  width: 39%;
   height: 91%;
 
   border: 2px solid white;
@@ -156,17 +156,17 @@
 }
 label {
   position: absolute;
-  top: 0;
-  font-size: 1.7em;
-  margin: 10px;
+  top: 50%;
+  transform: translate(0,-50%);
   padding: 0 10px;
+  font-size: 1.7em;
   -webkit-transition: top .2s ease-in-out,
                       font-size .2s ease-in-out;
   transition: top .2s ease-in-out,
               font-size .2s ease-in-out;
 }
 .active {
-  top: -22px;
+  top: 0;
   font-size: 1.2em;
   z-index: 100;
 }
@@ -190,7 +190,7 @@ label {
   background-color: inherit;
   border: none;
   font-family: inherit;
-  padding-left: 2%;
+  padding-left: 0;
   color: white;
   font-size: 25px;
   outline: none;
