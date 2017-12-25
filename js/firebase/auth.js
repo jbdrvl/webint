@@ -6,8 +6,11 @@ $('document').ready(function () {
       // Handle Errors here.
       var errorCode = error.code;
       var errorMessage = error.message;
-      // ...
-      //alert(errorMessage);
+      $('#background').css("visibility","visible");
+      $('#alertinfo').html(errorMessage);
+    });
+    $('#arrow').click(function () {
+      $('#background').css("visibility","hidden");
     });
     firebase.auth().onAuthStateChanged(function(user) {
       if (user) {

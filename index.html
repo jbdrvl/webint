@@ -14,6 +14,8 @@
     <link rel="icon" sizes="32x32" href="img/faviconfavicon-32.png" type="image/png">
     <link rel="icon" sizes="64x64" href="img/faviconfavicon-64.png" type="image/png">
     <link rel="icon" sizes="96x96" href="img/faviconfavicon-96.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <!-- Google Font links -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -39,12 +41,12 @@
       <div id="form-login-container">
         <div id="username-container">
           <label id="username_label" for="username">Username</label>
-          <input type="text" id="username" />
+          <input type="text" class="input" id="username" />
         </div>
 
         <div id="password-container">
           <label id="password_label" for="password">Password</label>
-          <input type="password" name="password" id="password" />
+          <input type="password" class="input" name="password" id="password" />
         </div>
 
           <button id="login" name="Submit" value="Login" type="Submit">LOGIN</button>
@@ -61,12 +63,12 @@
         </div>
         <div id="Spassword-container">
           <label id="spassword_label" for="spassword">Choose a password</label>
-          <input type="text" id="spassword" />
+          <input type="password" id="spassword" />
         </div>
 
         <div id="SRpassword-container">
           <label id="srpassword_label" for="srpassword">Retype the password</label>
-          <input type="text" id="srpassword" />
+          <input type="password" id="srpassword" />
         </div>
         <div id="Susername-container">
           <label id="susername_label" for="reemail">Choose a username</label>
@@ -77,9 +79,12 @@
       <div id="data_login">
         <p><a href="lost.html">Lost your password ?</a></p>
       </div>
-    <div class="message">
-      <p>Hello</p>
     </div>
+    <div id="background">
+      <div id="message">
+        <span id="arrow"><i id="cross" class="fa fa-times" aria-hidden="true"></i></span>
+        <p id="alertinfo">Hello</p>
+      </div>
     </div>
     <div id="copyright">
       <p>Copyright © NappyVoc - EURECOM webint project</p>
@@ -92,7 +97,7 @@
     <script type="text/jscript" src="js/animation.js"></script>
     <script type="text/jscript" src="js/tabin.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-    <script type="text/jscript" src="js/auth.js"></script>
+    <script type="text/jscript" src="js/firebase/auth.js"></script>
     <script>
       // Initialize Firebase
       var config = {

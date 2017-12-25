@@ -40,6 +40,18 @@ $('document').ready(function () {
   $('#signup').mouseout(function () {
     $('#signup').css("font-weight","500");
   })
+  $('.input').keypress(function() {
+  var textLength = $(this).val().length;
+  if (textLength < 13) {
+      $(this).css('font-size', '1.5em');
+      $(this).css('margin-right', '1em');
+  } else if (textLength > 13) {
+      $(this).css('font-size', '1.2em');
+  }
+
+ //console.log(textLength);
+});
+
 });
 
 $('document').ready(function () {
