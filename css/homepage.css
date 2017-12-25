@@ -10,6 +10,7 @@
 
   animation: appearing 3s;
   -webkit-animation: appearing 3s;
+  transition: width 1s, height 1s, bottom 1s;
 }
 @keyframes logo_animation {
     0% {
@@ -59,6 +60,8 @@
 
   -webkit-animation: login_coming_up 3s;
   animation: login_coming_up 3s;
+  transition: top 1s;
+  -webkit-transition: top 1s;
 }
 @keyframes login_coming_up {
     from {opacity: 0;
@@ -78,6 +81,7 @@
   height: 45%;
   color : white;
   display: table;
+  transition: height 200ms;
 }
 #login-title p {
   font-size: 2.5em;
@@ -89,7 +93,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 25%;
+  width: 30%;
   height: 45%;
   display: table;
 }
@@ -105,11 +109,9 @@
   background-color: inherit;
   color: inherit;
   border: none;
+  outline: none;
   border-bottom: 3px solid white;
   z-index: 100;
-}
-#signin:hover{
-  font-weight: 900;
 }
 #signup{
   position: absolute;
@@ -127,10 +129,7 @@
   border-bottom: 3px solid white;
   z-index: 100;
 }
-#signup:hover{
-  font-weight: 900;
-}
-#form-container{
+#form-login-container{
   position: absolute;
   top: 45%;
   left: 0;
@@ -154,12 +153,122 @@
   height: 91%;
   border: 2px solid white;
 }
+
+#form-signup-container{
+  visibility: hidden;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  height: 75%;
+}
+#email-container{
+  position: absolute;
+    top: 0;
+  width : 100%;
+  height : 20%;
+
+  border : solid 2px white;
+}
+#reemail-container{
+  position: absolute;
+    top: 25%;
+  width : 100%;
+  height : 20%;
+
+  border : solid 2px white;
+}
+#Spassword-container{
+  position: absolute;
+    top : 50%;
+    left : 0;
+  width : 49.5%;
+  height : 20%;
+
+  border : solid 2px white;
+}
+#SRpassword-container{
+  position: absolute;
+    top : 50%;
+    left : 50.5%;
+  width : 49.5%;
+  height : 20%;
+
+  border : solid 2px white;
+}
+#Spassword-container{
+  position: absolute;
+    top : 50%;
+    left : 0;
+  width : 49%;
+  height : 20%;
+
+  border : solid 2px white;
+}
+#SRpassword-container{
+  position: absolute;
+    top : 50%;
+    left : 51%;
+  width : 49%;
+  height : 20%;
+
+  border : solid 2px white;
+}
+#Susername-container{
+  position: absolute;
+    top : 75%;
+    left : 0;
+  width : 75%;
+  height : 20%;
+
+  border : solid 2px white;
+}
+#signup-button {
+  position: absolute;
+  top: 75%;
+  left: 77%;
+  width: 23.5%;
+  height: 21.5%;
+  background-color: inherit;
+  border: 2px solid white;
+  border-radius: 0;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: inherit;
+  outline: none;
+  -webkit-transition: font-weight .5s, border-radius 0.5s, background-color 1s;
+}
+#signup-button:hover{
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 2em;
+  font-weight: 900;
+  cursor: pointer;
+  background-color: white;
+  color: all.background-color;
+  -webkit-transition: font-weight .5s, border-radius 0.5s, background-color 1s;
+}
+
+input{
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  border: none;
+  font-family: inherit;
+  padding-left: 1em;
+  color: white;
+  font-size: 25px;
+  outline: none;
+}
 label {
   position: absolute;
-  top: 50%;
+  top: 48%;
+  left: 0.5em;
   transform: translate(0,-50%);
-  padding: 0 10px;
+  padding: 0 15px;
   font-size: 1.7em;
+  pointer-events: none;
   -webkit-transition: top .2s ease-in-out,
                       font-size .2s ease-in-out;
   transition: top .2s ease-in-out,
@@ -170,34 +279,7 @@ label {
   font-size: 1.2em;
   z-index: 100;
 }
-#username {
-  width: 90%;
-  height: 100%;
-  border: none;
-  background-color: inherit;
-  font-family: inherit;
-  font-size: 25px;
-  color: white;
-  padding-left: 2%;
-  outline: none;
-}
-#username:focus {
-  /* background-color: rgba(0,0,0,0.1); */
-}
-#password {
-  width: 90%;
-  height: 100%;
-  background-color: inherit;
-  border: none;
-  font-family: inherit;
-  padding-left: 0;
-  color: white;
-  font-size: 25px;
-  outline: none;
-}
-#password:focus {
-  /* background-color: rgba(0,0,0,0.1); */
-}
+
 #login {
   margin-left: 1em;
   position: absolute;
@@ -214,6 +296,7 @@ label {
   font-size: 25px;
   font-family: inherit;
   outline: none;
+  z-index: 500;
   -webkit-transition: font-weight .5s, border-radius 0.5s, background-color 1s;
 }
 #login:hover{
@@ -255,13 +338,19 @@ label {
   animation: appearing 2s;
   animation-delay: 2.5s;
   animation-fill-mode:forwards;
-
-
 }
 @keyframes appearing {
-    from {opacity: 0;}
-    to {opacity: 1;}
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
+.message{
+  position: absolute;
+    top : 10%;
+    left : 20%;
+    
+  background-color: white;
+}
+
 
 @media only screen and (max-device-width: 480px) {
   .logo{

@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
     <link rel="stylesheet" href="css/homepage.css" type="text/css"/>
 
+    <!-- Favicon Links -->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/faviconfavicon.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/faviconfavicon-32.png" type="image/png">
+    <link rel="icon" sizes="64x64" href="img/faviconfavicon-64.png" type="image/png">
+    <link rel="icon" sizes="96x96" href="img/faviconfavicon-96.png" type="image/png">
+
     <!-- Google Font links -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
@@ -27,9 +34,9 @@
         <button id="signup" name="Submit" value="Login" type="Submit" href='#'>Sign Up</button>
       </div>
       <div id="login-title">
-        <p>Welcome back</p>
+        <p id="login-title-p">Welcome back</p>
       </div>
-      <div id="form-container">
+      <div id="form-login-container">
         <div id="username-container">
           <label id="username_label" for="username">Username</label>
           <input type="text" id="username" />
@@ -40,12 +47,39 @@
           <input type="password" name="password" id="password" />
         </div>
 
-          <button id="login" name="Submit" value="Login" type="Submit" href='home.html'>LOGIN</button>
+          <button id="login" name="Submit" value="Login" type="Submit">LOGIN</button>
         </form>
+      </div>
+      <div id="form-signup-container">
+        <div id="email-container">
+          <label id="email_label" for="email">Type your email</label>
+          <input class="input" type="text" id="email" />
+        </div>
+        <div id="reemail-container">
+          <label id="reemail_label" for="reemail">Retype your email</label>
+          <input type="text" id="reemail" />
+        </div>
+        <div id="Spassword-container">
+          <label id="spassword_label" for="spassword">Choose a password</label>
+          <input type="text" id="spassword" />
+        </div>
+
+        <div id="SRpassword-container">
+          <label id="srpassword_label" for="srpassword">Retype the password</label>
+          <input type="text" id="srpassword" />
+        </div>
+        <div id="Susername-container">
+          <label id="susername_label" for="reemail">Choose a username</label>
+          <input type="text" id="susername" />
+        </div>
+        <button id="signup-button" class="my-button" name="Submit" value="Login" type="Submit" href='home.html'>SIGNUP</button>
       </div>
       <div id="data_login">
         <p><a href="lost.html">Lost your password ?</a></p>
       </div>
+    <div class="message">
+      <p>Hello</p>
+    </div>
     </div>
     <div id="copyright">
       <p>Copyright © NappyVoc - EURECOM webint project</p>
@@ -57,5 +91,19 @@
     <script type="text/jscript" src="js/jquery.min.js"></script>
     <script type="text/jscript" src="js/animation.js"></script>
     <script type="text/jscript" src="js/tabin.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script type="text/jscript" src="js/auth.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBYUS3r9Cq0xn6gTSTlvLkbPoQupxZ3jCo",
+        authDomain: "nappyvoc.firebaseapp.com",
+        databaseURL: "https://nappyvoc.firebaseio.com",
+        projectId: "nappyvoc",
+        storageBucket: "",
+        messagingSenderId: "293035694779"
+      };
+      firebase.initializeApp(config);
+    </script>
   </body>
 </html>

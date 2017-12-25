@@ -30,11 +30,6 @@
     to {transform: translateY(0px);
           opacity: 1}
 }
-
-
-
-
-
 body {
    padding: 0;
    margin: 0;
@@ -59,8 +54,9 @@ a {
 .menu-open-button {
    background: #EEEEEE;
    border-radius: 100%;
-   width: 50px;
-   height: 50px;
+   width: 80px;
+   height: 80px;
+   margin-left: -40px;
    position: absolute;
    color: #FFFFFF;
    text-align: center;
@@ -79,30 +75,33 @@ a {
 
 .lines {
    width: 25px;
-   height: 2px;
+   height: 3px;
    background: #596778;
    display: block;
    position: absolute;
    top: 50%;
    left: 50%;
    margin-left: -12.5px;
-   margin-top: -1px;
+   margin-top: -1.5px;
    -webkit-transition: -webkit-transform 200ms;
    transition: -webkit-transform 200ms;
    transition: transform 200ms;
    transition: transform 200ms, -webkit-transform 200ms;
 }
+
 .line-1 {
-   -webkit-transform: translate3d(0, -6px, 0);
-   transform: translate3d(0, -6px, 0);
+   -webkit-transform: translate3d(0, -8px, 0);
+   transform: translate3d(0, -8px, 0);
 }
+
 .line-2 {
    -webkit-transform: translate3d(0, 0, 0);
    transform: translate3d(0, 0, 0);
 }
+
 .line-3 {
-   -webkit-transform: translate3d(0, 6px, 0);
-   transform: translate3d(0, 6px, 0);
+   -webkit-transform: translate3d(0, 8px, 0);
+   transform: translate3d(0, 8px, 0);
 }
 
 .menu-open:checked + .menu-open-button .line-1 {
@@ -121,14 +120,17 @@ a {
 }
 
 .menu {
+   margin: auto;
    position: absolute;
-     top: 10%;
-     left: 10%;
-   width: 40px;
-   height: 40px;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   width: 80px;
+   height: 80px;
    text-align: center;
    box-sizing: border-box;
-   font-size: 10px;
+   font-size: 26px;
 }
 
 
@@ -210,7 +212,7 @@ a {
 .menu-open:checked ~ .menu-item:nth-child(3) {
    transition-duration: 180ms;
    -webkit-transition-duration: 180ms;
-   -webkit-transform: translate3d(0.08361px, -2px, 0);
+   -webkit-transform: translate3d(0.08361px, -104.99997px, 0);
    transform: translate3d(0.08361px, -104.99997px, 0);
 }
 
@@ -218,7 +220,7 @@ a {
    transition-duration: 280ms;
    -webkit-transition-duration: 280ms;
    -webkit-transform: translate3d(90.9466px, -52.47586px, 0);
-   transform: translate3d(90.9466px, -100px, 0);
+   transform: translate3d(90.9466px, -52.47586px, 0);
 }
 
 .menu-open:checked ~ .menu-item:nth-child(5) {
@@ -320,4 +322,21 @@ a {
 .lightblue:hover {
    color: #62C2E4;
    text-shadow: none;
+}
+
+.credit {
+   margin: 24px 20px 120px 0;
+   text-align: right;
+   color: #EEEEEE;
+}
+
+.credit a {
+   padding: 8px 0;
+   color: #C49CDE;
+   text-decoration: none;
+   transition: all 0.3s ease 0s;
+}
+
+.credit a:hover {
+   text-decoration: underline;
 }

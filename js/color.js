@@ -16,6 +16,11 @@ var html = document.getElementById("all");
 var login = document.getElementById("login");
 var label_u = document.getElementById("username_label");
 var label_p = document.getElementById("password_label");
+var label_e = document.getElementById("email_label");
+var label_re = document.getElementById("reemail_label");
+var label_sp = document.getElementById("spassword_label");
+var label_srp = document.getElementById("srpassword_label");
+var label_su = document.getElementById("susername_label");
 var buttons = document.getElementsByClassName('my-button');
 var secColors = document.getElementsByClassName('sec-colors');
 
@@ -25,6 +30,11 @@ html.style.backgroundColor = colors[colourIndex];
 try{
   label_u.style.backgroundColor = colors[colourIndex];
   label_p.style.backgroundColor = colors[colourIndex];
+  label_e.style.backgroundColor = colors[colourIndex];
+  label_re.style.backgroundColor = colors[colourIndex];
+  label_sp.style.backgroundColor = colors[colourIndex];
+  label_srp.style.backgroundColor = colors[colourIndex];
+  label_su.style.backgroundColor = colors[colourIndex];
 } catch(err) {
   console.log('[DEBUG] did not find element with ID name: login');
 }

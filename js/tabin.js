@@ -13,15 +13,57 @@ var second_color = [
 var tab = 1;
 var colourIndex = localStorage.getItem("color");
 
-var signin = document.getElementById("signin");
-var signup = document.getElementById("signup");
-var title = document.getElementById("login-title");
+$('#signin').css("border-color",second_color[colourIndex]);
 
-if (tab == 1){
-  signin.style.borderBottomColor=second_color[colourIndex];
-  signin.style.fontWeight="900";
-}
 
-if (tab == 2){
-  
-}
+$('document').ready(function () {
+  $('#signup').click(function () {
+    $('#login-title-p').html("Create an account");
+    $('#signin').css("border-color","white");
+    $('#signup').css("border-color",second_color[colourIndex]);
+    $('#signin').css("font-weight","500");
+    $('#signup').css("font-weight","900");
+    $('#form-login-container').css("visibility","hidden");
+    $('#form-signup-container').css({visibility:"visible", opacity: 0.0}).animate({opacity: 1.0},200);
+    $('#logo').css("width","30vh");
+    $('#logo').css("height","30vh");
+    $('#logo').css("bottom","35%");
+    $('#login-form').css("top","70%");
+    $('#login-form').css("height","45%");//TODO
+    $('#login-title').css("height","20%");
+    $('#buttons_container').css("height","20%");
+    $('#data_login').css("visibility","hidden");
+  })
+  $('#signup').mouseover(function () {
+    $('#signup').css("font-weight","1000");
+  })
+  $('#signup').mouseout(function () {
+    $('#signup').css("font-weight","500");
+  })
+});
+
+$('document').ready(function () {
+  $('#signin').click(function () {
+    $('#login-title-p').html("Welcome back");
+    $('#signup').css("border-color","white");
+    $('#signin').css("border-color",second_color[colourIndex]);
+    $('#signup').css("font-weight","500");
+    $('#signin').css("font-weight","900");
+    $('#logo').css("width","45vh");
+    $('#logo').css("height","45vh");
+    $('#logo').css("bottom","7em");
+    $('#login-form').css("top","75%");
+    $('#login-form').css("height","20%");
+    $('#form-login-container').css({visibility:"visible", opacity: 0.0}).animate({opacity: 1.0},200);
+    $('#form-signup-container').css("visibility","hidden");
+    $('#login-title').css("height","45%");
+    $('#buttons_container').css("height","45%");
+    $('#data_login').css("visibility","visible");
+  })
+  $('#signin').mouseover(function () {
+    $('#signin').css("font-weight","1000");
+  })
+  $('#signin').mouseout(function () {
+    $('#signin').css("font-weight","500");
+  })
+});
