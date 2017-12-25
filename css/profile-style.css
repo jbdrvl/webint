@@ -70,8 +70,20 @@ img {
   width: 100%;
 }
 
-#biblio {
+#bio-display {
   color: white;
+}
+
+#bio-edit-field, #save-bio {
+  display: none;
+}
+
+#edit-bio {
+  font-style: underline;
+}
+
+#edit-bio:hover, #save-bio:hover {
+  cursor: pointer;
 }
 
 /* SCORES */
