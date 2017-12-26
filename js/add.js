@@ -36,6 +36,7 @@ var nb_word=0
 
     function addField() {
     addback();
+    addback();
     addword();
     addtranslation();
     
