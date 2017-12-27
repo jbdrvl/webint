@@ -5,6 +5,7 @@ var bioEditField = document.getElementById('bio-edit-field');
 
 editButton.addEventListener("click", function() {
   bioEditField.value=bioField.innerHTML;
+  bioEditField.style.height = (bioField.scrollHeight)+"px";
   bioEditField.style.display = "block";
   saveButton.style.display = "block";
   editButton.style.display = "none";
