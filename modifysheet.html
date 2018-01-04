@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html id="all">
+  <head>
+    <meta charset="utf-8">
+    <title>NappyVoc - Create a new sheet</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/add.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+  </head>
+  <body>
+    <div id="header" align="center">
+      <table>
+        <td class="logo">
+          <img id="logo-img" src="img/logo2.svg" alt="NappyVoc Logo">
+        </td>
+        <td>
+          <h1 id="web-title">Modify sheet</h1>
+        </td>
+      </table>
+    </div>
+    <div id=titre align="center">
+    	<tr>
+			<td align="center">Title</td>
+			<td align="center"><input type="text" id="elt1" name="elt1" value="food related spanish vocabulary"/></td>
+		</tr>
+	</div>
+	<br>
+	<br>
+	<div id=language align="center">
+    	<tr>
+			<h2 align="center" id=titrelanguage>language</h2>
+			<form>
+				<p>
+<!-- une balise select ou input ne peut pas être imbriquée directement dans form -->
+     				<select name=language align="center" id=language2 >
+          			<option >German</option>
+          			<option selected="selected" >Spanish</option>
+          			<option >French</option>
+          			<option >Chinese</option>
+          			<option >Japanese</option>
+          			<option >swedish</option>
+          			<option >Danish</option>
+     				</select>
+				</p>
+			</form>
+
+		</tr>
+	</div>
+	<br>
+	<br>
+	<div id=words align="center">	
+		<tr>
+			<input type="text" name="Word1" id="word1" placeholder="Word" required="" autofocus="" align="center" value="agua"/><input type="text" name="translation1" id="trans1" placeholder="translation" required="" autofocus="" align="center" value ="water"/>
+		</tr>
+    <br>
+    <br>
+    <tr>
+      <input type="text" name="Word2" id="word2" placeholder="Word" required="" autofocus="" align="center" value="mantequila"/><input type="text" name="translation2" id="trans2" placeholder="translation" required="" autofocus="" align="center" value ="butter"/>
+    </tr>
+    <br>
+    <br>
+    <tr>
+      <input type="text" name="Word3" id="word3" placeholder="Word" required="" autofocus="" align="center" value="especia"/><input type="text" name="translation3" id="trans3" placeholder="translation" required="" autofocus="" align="center" value ="spices"/>
+    </tr>
+    <br>
+    <br>
+    <tr>
+      <input type="text" name="Word4" id="word4" placeholder="Word" required="" autofocus="" align="center" value="freir"/><input type="text" name="translation4" id="trans5" placeholder="translation" required="" autofocus="" align="center" value ="fry"/>
+    </tr>
+    <br>
+    <br>
+    <tr>
+      <input type="text" name="Word5" id="word5" placeholder="Word" required="" autofocus="" align="center" value="leche"/><input type="text" name="translation5" id="trans5" placeholder="translation" required="" autofocus="" align="center" value ="milk"/>
+    </tr>
+    <br>
+    <br>
+    <tr>
+      <input type="text" name="Word6" id="word6" placeholder="Word" required="" autofocus="" align="center" value="la cena"/><input type="text" name="translation6" id="trans6" placeholder="translation" required="" autofocus="" align="center" value ="diner"/>
+    </tr>
+    <br>
+    <br>
+    <tr>
+      <input type="text" name="Word7" id="word7" placeholder="Word" required="" autofocus="" align="center" value="salty"/><input type="text" name="translation7" id="trans7" placeholder="translation" required="" autofocus="" align="center" value ="salado"/>
+    </tr>
+    <br>
+    <br>
+    <tr>
+      <input type="text" name="Word8" id="word8" placeholder="Word" required="" autofocus="" align="center" value="vino"/><input type="text" name="translation8" id="trans8" placeholder="translation" required="" autofocus="" align="center" value ="wine"/>
+    </tr>
+	</div>
+	<div id=plusbutton align="center">
+		<br>
+		<td><button type="button" id =plusbut onclick="addField()" class="my-button">Add a new field</button></td>
+	</div>
+<br>
+<br>
+<div id=subbut align=center>
+	<button type="button" id=submitbut class="my-button">Submit</button>	
+</div>
+
+
+<div id="copyright" align=center>
+    <p>Copyright © NappyVoc - EURECOM webint project</p>
+</div>
+
+<!--SCRIPTS GOES HERE -->
+    <script type="text/jscript" src="js/add.js"></script>
+    <script type="text/jscript" src="js/color.js"></script>
+    <script type="text/jscript" src="js/keep_color.js"></script>
+    <script type="text/jscript" src="js/anime.min.js"></script>
+    <script type="text/jscript" src="js/animation.js"></script>
