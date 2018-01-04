@@ -61,8 +61,9 @@ function getRandomIntInclusive(min, max) {
   return Math.floor(Math.random() * (max - min +1)) + min;
 }
 
-var voc = ["Oso", "Kevin", "Casa", "Ciudad"];
-document.getElementById("myBtn").innerHTML = voc[getRandomIntInclusive(0,3)];
+var voc = ["Oso", "Kevin", "Casa", "Ciudad", "	analista financiero", "árbitro" , "abogado", "basquetbolista","boxeador", "leñador", "	cirujano" ];
+var vocf = ["Ours", "Kevin", "Maison", "Ville", "analyste financier", "arbitre","avocat", "basketeur", "boxeur", "bûcheron", "chirurgien" ];
+document.getElementById("myBtn").innerHTML = voc[getRandomIntInclusive(0,voc.length -1)];
 var y = document.getElementById("myBtn").innerHTML;
 var x = document.getElementById("myBtn");
 x.addEventListener("mouseover", myFunction);
