@@ -9,6 +9,30 @@ img {
   max-height:100%;
 }
 
+button {
+  text-align: center;
+  font-size: 1.8em;
+  height: 100%;
+  background-color: inherit;
+  border: 2px solid white;
+  border-radius: 0;
+  color: white;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 1.8em;
+  padding: 8px;
+  -webkit-transition: font-weight .5s, border-radius 0.5s, background-color 1s;
+}
+
+button:hover{
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 2em;
+  cursor: pointer;
+  background-color: white;
+  color: all.background-color;
+  -webkit-transition: font-weight .5s, border-radius 0.5s, background-color 1s;
+}
+
 #header table {
   margin: 0 auto;
 }
@@ -47,6 +71,8 @@ img {
   text-align: center;
   border-bottom: 2px solid white;
   margin-bottom: 10px;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .col-content {
@@ -128,6 +154,24 @@ img {
   padding-right: 10px;
   overflow:hidden;
   overflow-y:scroll;
+}
+
+/* BACK HOME button */
+
+#go-home {
+  width: 90%;
+  margin: 20px auto;
+  padding: 15px;
+
+}
+
+#go-home {
+  width: 40%;
+  margin: 0 auto;
+}
+
+#go-home-button button {
+  width: 100%;
 }
 
 /* copyrights */
