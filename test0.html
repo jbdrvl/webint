@@ -38,12 +38,12 @@
 <div id="choice" >
     <table>
       <tr>
-        <td><button type="button" name="button1" class="my-button" >Kevin</button></td>
-        <td><button type="button" name="button2" class="my-button">Ours</button></td>
+        <td><button id="button1" type="button" name="button1" class="my-button" >Kevin</button></td>
+        <td><button id="button2" type="button" name="button2" class="my-button">Ours</button></td>
       </tr>
       <tr>
-        <td><button type="button" name="button3" class="my-button">Maison</button></td>
-        <td><button type="button" name="button4" class="my-button">Chais  e</button></td>
+        <td><button id="button3" type="button" name="button3" class="my-button">Maison</button></td>
+        <td><button id="button4" type="button" name="button4" class="my-button">Chais  e</button></td>
       </tr>
     </table>
 </div>
@@ -63,7 +63,29 @@ function getRandomIntInclusive(min, max) {
 
 var voc = ["Oso", "Kevin", "Casa", "Ciudad", "	analista financiero", "árbitro" , "abogado", "basquetbolista","boxeador", "leñador", "	cirujano" ];
 var vocf = ["Ours", "Kevin", "Maison", "Ville", "analyste financier", "arbitre","avocat", "basketeur", "boxeur", "bûcheron", "chirurgien" ];
-document.getElementById("myBtn").innerHTML = voc[getRandomIntInclusive(0,voc.length -1)];
+var i = getRandomIntInclusive(0,voc.length -1);
+
+document.getElementById("myBtn").innerHTML = voc[i];
+
+var l= [i,getRandomIntInclusive(0,voc.length -1),getRandomIntInclusive(0,voc.length -1),getRandomIntInclusive(0,voc.length -1)]
+
+function shuffle(a) {
+    var j, x, i;
+    for (i = a.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        x = a[i];
+        a[i] = a[j];
+        a[j] = x;
+    }
+}
+
+shuffle(l);
+
+document.getElementById("button1").innerHTML = vocf[l[1]];
+document.getElementById("button2").innerHTML = vocf[l[2]];
+document.getElementById("button3").innerHTML = vocf[l[3]];
+document.getElementById("button4").innerHTML = vocf[l[0]];
+
 var y = document.getElementById("myBtn").innerHTML;
 var x = document.getElementById("myBtn");
 x.addEventListener("mouseover", myFunction);
