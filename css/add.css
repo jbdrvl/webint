@@ -29,27 +29,30 @@ body {
 
 
 
-#plusbut{
-   text-align: center;
-   font-size: 1em;
-   background-color:inherit;
-   border: 2px solid white;
-   text-decoration : none;
-   padding: 2px;
 
+
+button {
+  text-align: center;
+  font-size: 1.8em;
+  height: 100%;
+  background-color: inherit;
+  border: 2px solid white;
+  border-radius: 0;
+  color: white;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 1.8em;
+  padding: 8px;
+  -webkit-transition: font-weight .5s, border-radius 0.5s, background-color 1s;
 }
 
-
-
-#plusbut:hover{
-background-color: rgba(0,0,0,0.1);
-border-radius: 2em;
-font-weight: 900;
-cursor: pointer;
-background-color: white;
-color: all.background-color;
--webkit-transition: font-weight .5s, border-radius 0.5s, background-color 1s;
-
+button:hover{
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 2em;
+  cursor: pointer;
+  background-color: white;
+  color: all.background-color;
+  -webkit-transition: font-weight .5s, border-radius 0.5s, background-color 1s;
 }
 
 option{
@@ -82,7 +85,7 @@ option{
     margin: 0 auto;
 }
 
-#word1 {
+input {
   top: 0;
   left: -2px;
   width: 15%;
@@ -95,28 +98,6 @@ option{
   color: white;
   padding-left: 2%;
   outline: none;
-}
-#word1:focus {
-  background-color: rgba(0,0,0,0.1);
-}
-
-
-#trans1 {
-  top: 0;
-  left: -2px;
-  width: 15%;
-  height: 91%;
-  border: none;
-  background-color: inherit;
-  border: 2px solid white;
-  font-family: inherit;
-  font-size: 25px;
-  color: white;
-  padding-left: 2%;
-  outline: none;
-}
-#trans1:focus {
-  background-color: rgba(0,0,0,0.1);
 }
 
 #titre{
@@ -183,30 +164,3 @@ margin-right: auto;
 
 }
 
-#submitbut {
-  margin-left: 1em;
-  top: 0;
-  left: 80%;
-  width: 19.9%;
-  height: 100%;
-  background-color: inherit;
-  border: 2px solid white;
-  border-radius: 0;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 25px;
-  font-family: inherit;
-  outline: none;
-  -webkit-transition: font-weight .5s, border-radius 0.5s, background-color 1s;
-}
-
-#submitbut:hover {
-background-color: rgba(0,0,0,0.1);
-border-radius: 2em;
-font-weight: 900;
-cursor: pointer;
-background-color: white;
-color: all.background-color;
--webkit-transition: font-weight .5s, border-radius 0.5s, background-color 1s;
-}

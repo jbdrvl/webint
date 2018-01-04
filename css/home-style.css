@@ -1,3 +1,8 @@
+body {
+  background-color: inherit;
+  color: inherit;
+}
+
 button {
   text-align: center;
   font-size: 1.8em;
@@ -38,25 +43,22 @@ button:hover{
 
 #choice {
   width: 90%;
-  margin: 12px auto;
-}
-
-#choice table {
-  width: 100%;
-  table-layout: fixed;
-}
-
-#choice td {
-  padding: 20px 50px;
+  margin: 30px auto;
+  text-align: center;
 }
 
 #choice button {
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.col-inner{
+  padding: 2% 0%;
 }
 
 #my-profile {
   width: 90%;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 15px;
 
 }
@@ -73,7 +75,7 @@ button:hover{
 #copyright{
   width: 100%;
   color: white;
-  position: absolute;
+  /*position: absolute;*/
   top: 90%;
   left: 0;
   display: table;

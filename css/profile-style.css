@@ -1,3 +1,8 @@
+body {
+  background-color: inherit;
+  color: inherit;
+}
+
 img {
   max-width:100%;
   max-height:100%;
@@ -22,28 +27,31 @@ img {
 }
 
 #content {
-  padding: 20px;
+  padding: 20px 5%;
 }
 
-#content>table {
-  width: 100%;
-  table-layout: fixed;
+.col-md-4 {
+  padding: 0 1%;
+  margin-bottom: 20px;
+}
+
+.col-inner {
+  margin: 3px;
+  padding: 0 5px;
   border: 2px solid white;
-}
-
-#content td {
-  padding: 10px;
+  height: 100%;
 }
 
 .col-title {
   text-align: center;
   border-bottom: 2px solid white;
+  margin-bottom: 10px;
 }
 
 .col-content {
   padding-bottom: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-top: 0;
   text-align: left;
 }
@@ -58,16 +66,20 @@ img {
   color: white
 }
 
-
 /* ID CARD COL */
 
 #profile-pic {
   max-width: 150px;
   max-height: 150px;
+  margin: 10px;
 }
 
 .col-content table, #user-infos {
   width: 100%;
+}
+
+#user-infos h3 {
+  padding:: 5px 1px;
 }
 
 #bio-display {
@@ -76,6 +88,13 @@ img {
 
 #bio-edit-field, #save-bio {
   display: none;
+}
+
+#bio-edit-field {
+  max-width: 100%;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  color: black;
 }
 
 #edit-bio {
@@ -103,8 +122,8 @@ img {
   font-size: 1.1em;
 }
 
-.col-content nav ul {
-  height:300px;
+#scores-scroll {
+  height:100px;
   padding-right: 10px;
   overflow:hidden;
   overflow-y:scroll;
