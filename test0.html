@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html id="all">
+  <head>
+    <meta charset="utf-8">
+    <title>NappyVoc - Training Arena - Level 0</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/test0.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+  </head>
+  <body>
+    <div id="header">
+      <table align='center'>
+        <td class="logo">
+          <img id="logo-img" src="img/logo2.svg" alt="NappyVoc Logo">
+        </td>
+        <td>
+          <h1>NappyVoc</h1>
+          <h2>Training Arena - Level 0 </h2>
+
+        </td>
+      </table>
+    </div>
+<!--<div id="word">
+ <table>
+  <td>
+  <h3>oso</h3>
+  </td>
+ </table>
+</div> -->
+<div id="pass" align='center'>
+  <div id="pass">
+    <button id="myBtn" type="button" name="Pass" class="my-button" onclick="window.location='test0.html'" ></button>
+  </div>
+</div>
+<div id="choice" >
+    <table>
+      <tr>
+        <td><button type="button" name="button1" class="my-button" >Kevin</button></td>
+        <td><button type="button" name="button2" class="my-button">Ours</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" name="button3" class="my-button">Maison</button></td>
+        <td><button type="button" name="button4" class="my-button">Chais  e</button></td>
+      </tr>
+    </table>
+</div>
+<br>
+
+<div id="copyright">
+    <p>Copyright © NappyVoc - EURECOM WebInt project</p>
+</div>
+
+<script>
+
+function getRandomIntInclusive(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min +1)) + min;
+}
+
+var voc = ["Oso", "Kevin", "Casa", "Ciudad"];
+document.getElementById("myBtn").innerHTML = voc[getRandomIntInclusive(0,3)];
+var y = document.getElementById("myBtn").innerHTML;
+var x = document.getElementById("myBtn");
+x.addEventListener("mouseover", myFunction);
+x.addEventListener("mouseout", mySecondFunction);
+
+
+function myFunction() {
+    document.getElementById("myBtn").innerHTML = "Next word";
+}
+
+function mySecondFunction() {
+    document.getElementById("myBtn").innerHTML = y;
+}
+
+</script>
+<script type="text/jscript" src="js/test0.js"></script>
+<script type="text/jscript" src="js/color.js"></script>
+<script type="text/jscript" src="js/anime.min.js"></script>
+<script type="text/jscript" src="js/animation.js"></script>
+<script type="text/jscript" src="js/keep_color.js"></script>
+  </body>
+</html>
