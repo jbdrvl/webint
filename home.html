@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>NappyVoc - Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home-style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -17,12 +18,18 @@
       <h1>Welcome Home!</h1>
     </div>
     <div id="choice">
-      <table>
-        <tr>
-          <td><button type="button" name="my-words" class="my-button">My VocSheets</button></td>
-          <td><button type="button" name="other-words" class="my-button">Browse Other Words</button></td>
-        </tr>
-      </table>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="col-inner">
+            <button type="button" name="my-words" class="my-button">My VocSheets</button>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="col-inner">
+            <button type="button" name="other-words" class="my-button">Browse Other Words</button>
+          </div>
+        </div>
+      </div>
     </div>
     <div id="my-profile">
       <div id="my-profile-button">
