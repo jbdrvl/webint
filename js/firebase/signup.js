@@ -15,6 +15,11 @@ $('document').ready(function () {
       $('#background').css("visibility","visible");
       $('#alertinfo').html(errorMessage);
       });
+      firebase.auth().currentUser.sendEmailVerification().then(function() {
+        // Email sent.
+      }, function(error) {
+      alert("error with email verification")
+      });
       $('#arrow').click(function () {
         $('#background').css("visibility","hidden");
       });
