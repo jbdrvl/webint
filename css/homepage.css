@@ -12,6 +12,23 @@
   -webkit-animation: appearing 3s;
   transition: width 1s, height 1s, bottom 1s;
 }
+.bubble-m {
+  /* stroke: #;
+  stroke-dasharray: 4,2; */
+  width: 30vh;
+  position: absolute;
+    left: 30%;
+    top: 30%;
+  transform: translateX(-50%);
+
+}
+#bubble{
+  transform: rotate(-15deg);
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+}
+
 @keyframes logo_animation {
     0% {
         transform: scale(1.0);
@@ -228,7 +245,7 @@
   top: 75%;
   left: 77%;
   width: 23.5%;
-  height: 21.5%;
+  height: 21%;
   background-color: inherit;
   border: 2px solid white;
   border-radius: 0;
@@ -288,7 +305,7 @@ label {
   top: 0;
   left: 80%;
   width: 19.9%;
-  height: 100%;
+  height: 97%;
   background-color: inherit;
   border: 2px solid white;
   border-radius: 0;
@@ -357,8 +374,8 @@ label {
 }
 #arrow{
   position: absolute;
-    top : 2%;
-    left : 98%;
+    top : 10px;
+    right: 1px;
     transform: translate(-100%,0);
 
   background-color: gray;
@@ -373,7 +390,7 @@ label {
 }
 #cross{
   position : absolute;
-    top : 10%;
+    top : 4px;
     left : 25%; /*Centering*/
   margin: auto;
   text-align: center;

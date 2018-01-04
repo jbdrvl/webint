@@ -14,11 +14,11 @@
     <link rel="icon" sizes="32x32" href="img/faviconfavicon-32.png" type="image/png">
     <link rel="icon" sizes="64x64" href="img/faviconfavicon-64.png" type="image/png">
     <link rel="icon" sizes="96x96" href="img/faviconfavicon-96.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 
     <!-- Google Font links -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   </head>
   <body>
@@ -27,7 +27,12 @@
     </div>
 
     <div id="logo">
-      <img id="logo-img" src="img/logo2.svg" alt="Nappy's Logo">
+      <a href="information.html">
+        <img id="logo-img" src="img/logo2.svg" alt="Nappy's Logo">
+      </a>
+    </div>
+    <div id="bubble">
+      <img class="bubble-m" src="img/bubble.svg" alt="">
     </div>
 
     <div class="box" id="login-form">
@@ -91,13 +96,14 @@
     </div>
 
     <!--SCRIPTS GOES HERE -->
-    <script type="text/jscript" src="js/color.js"></script>
     <script type="text/jscript" src="js/anime.min.js"></script>
     <script type="text/jscript" src="js/jquery.min.js"></script>
-    <script type="text/jscript" src="js/animation.js"></script>
+    <script type="text/jscript" src="js/color.js"></script>
     <script type="text/jscript" src="js/tabin.js"></script>
+    <script type="text/jscript" src="js/animation.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
     <script type="text/jscript" src="js/firebase/auth.js"></script>
+    <script type="text/jscript" src="js/firebase/signup.js"></script>
     <script>
       // Initialize Firebase
       var config = {

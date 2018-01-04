@@ -22,32 +22,30 @@
       Give us you're email address and we will send you a new password !
     </h2>
 
-    <nav class="menu">
-   <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
-   <label class="menu-open-button" for="menu-open">
-    <span class="lines line-1"></span>
-    <span class="lines line-2"></span>
-    <span class="lines line-3"></span>
-  </label>
-
-   <a href="#" class="menu-item blue"> <i class="fa fa-home"></i> </a>
-   <a href="#" class="menu-item green"> <i class="fa fa-sign-in-alt"></i> </a>
-   <a href="#" class="menu-item red"> <i class="fa fa-meetup"></i> </a>
-   <a href="#" class="menu-item purple"> <i class="fa fa-microphone"></i> </a>
-   <a href="#" class="menu-item orange"> <i class="fa fa-star"></i> </a>
-   <a href="#" class="menu-item lightblue"> <i class="fa fa-diamond"></i> </a>
-</nav>
-    <!-- <div id="form-container">
+    <div id="form-container">
       <div id="username-container">
         <label id="username_label" for="username">Username</label>
-        <input type="text" id="username" />
+        <input class="input" type="text" id="username" />
       </div>
-      <button id="login" name="Submit" value="Login" type="Submit" href='home.html'>LOGIN</button>
-    </div> -->
+      <button class="my-button" id="login" name="Submit" value="Login" type="Submit" href='home.html'>LOGIN</button>
+    </div>
 
 
     <script type="text/jscript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/keep_color.js"></script>
-    <script type="text/javascript" src="js/submitbutton.js"></script>
+    <script type="text/jscript" src="js/color.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBYUS3r9Cq0xn6gTSTlvLkbPoQupxZ3jCo",
+        authDomain: "nappyvoc.firebaseapp.com",
+        databaseURL: "https://nappyvoc.firebaseio.com",
+        projectId: "nappyvoc",
+        storageBucket: "",
+        messagingSenderId: "293035694779"
+      };
+      firebase.initializeApp(config);
+    </script>
   </body>
 </html>

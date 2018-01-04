@@ -17,7 +17,7 @@ $('document').ready(function () {
         var currentUser = firebase.auth().currentUser;
         //alert(currentUser.email);
         window.location.replace("home.html");
-        //firebase.auth().signOut();
+        firebase.auth().signOut();
       } else {
         // No user is signed in.
       }

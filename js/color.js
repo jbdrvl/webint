@@ -74,3 +74,13 @@ try {
 } catch(err) {
   console.log('[DEBUG] did not find any field with className = sec-colors');
 }
+
+$('input').on('focusin', function() {
+  $(this).parent().find('label').addClass('active');
+});
+
+$('input').on('focusout', function() {
+  if (!this.value) {
+    $(this).parent().find('label').removeClass('active');
+  }
+});

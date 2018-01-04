@@ -18,6 +18,7 @@ $('#signin').css("border-color",second_color[colourIndex]);
 
 $('document').ready(function () {
   $('#signup').click(function () {
+    localStorage.setItem("tab",0);
     $('#login-title-p').html("Create an account");
     $('#signin').css("border-color","white");
     $('#signup').css("border-color",second_color[colourIndex]);
@@ -48,7 +49,6 @@ $('document').ready(function () {
   } else if (textLength > 13) {
       $(this).css('font-size', '1.2em');
   }
-
  //console.log(textLength);
 });
 
@@ -56,6 +56,7 @@ $('document').ready(function () {
 
 $('document').ready(function () {
   $('#signin').click(function () {
+    localStorage.setItem("tab",1);
     $('#login-title-p').html("Welcome back");
     $('#signup').css("border-color","white");
     $('#signin').css("border-color",second_color[colourIndex]);
