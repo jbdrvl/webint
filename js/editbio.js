@@ -13,9 +13,13 @@ editButton.addEventListener("click", function() {
 });
 
 saveButton.addEventListener("click", function() {
+  document.getElementById("id-card").style.height="auto";
+  document.getElementById("stats").style.height="auto";
+  document.getElementById("last-scores").style.height="100px";
   bioField.innerHTML=bioEditField.value;
   bioEditField.style.display = "none";
   saveButton.style.display = "none";
   editButton.style.display = "block";
   bioField.style.display = "block";
+  setColHeights();
 });
