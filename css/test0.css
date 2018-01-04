@@ -1,0 +1,121 @@
+#logot{
+  float: left;
+  width: 20%;
+  height: 10%;
+}
+
+#titlet{
+  width: 80%;
+  float:right;
+  margin: auto;
+  position: relative;
+  top: 20px;
+  left: 5%;
+
+}
+#word{
+
+  font-size: 1.8em;
+  height: 100%;
+  background-color: inherit;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 1.8em;
+  padding: 8px;
+
+
+}
+
+img {
+  max-width:100%;
+  max-height:100%;
+}
+
+#header table {
+  margin: 0 auto;
+}
+
+.logo {
+    width: 30vh;
+    height: 30vh;
+    text-align: center;
+    margin: 0 auto;
+}
+
+button {
+  text-align: center;
+  font-size: 1.8em;
+  height: 100%;
+  background-color: inherit;
+  border: 2px solid white;
+  border-radius: 15px;
+  color: white;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 1.8em;
+  padding: 8px;
+  -webkit-transition: font-weight .5s, border-radius 0.5s, background-color 1s;
+}
+.button:hover{
+  display: none;
+}
+button:hover{
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 2em;
+  cursor: pointer;
+  background-color: white;
+  color: all.background-color;
+  -webkit-transition: font-weight .5s, border-radius 0.5s, background-color 1s;
+}
+
+button:before {
+
+    -webkit-transform: translate(-150%,0);
+    -moz-transform: translate(-150%,0);
+    -ms-transform: translate(-150%,0);
+    -o-transform: translate(-150%,0);
+    transform: translate(-150%,0);
+}
+
+#pass {
+  width: 90%;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 10px;
+
+}
+
+#pass-button {
+  width: 40%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+#pass-button button {
+  width: 100%;
+  border-radius: 10px;
+}
+#copyright p {
+  text-align: center;
+}
+
+#choice {
+  width: 90%;
+  margin: 12px auto;
+}
+
+#choice table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+#choice td {
+  padding: 20px 50px;
+}
+
+#choice button {
+  width: 100%;
+}
