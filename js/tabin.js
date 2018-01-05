@@ -9,8 +9,7 @@ var second_color = [
   "#D55C53",
   "#D55C53"
 ];
-
-var tab = 1;
+localStorage.setItem("tab",1);
 var colourIndex = localStorage.getItem("color");
 
 $('#signin').css("border-color",second_color[colourIndex]);
