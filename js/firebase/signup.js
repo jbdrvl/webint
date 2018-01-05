@@ -14,6 +14,9 @@ $('document').ready(function () {
       var errorMessage = error.message;
       $('#background').css("visibility","visible");
       $('#alertinfo').html(errorMessage);
+      $('#arrow').click(function () {
+        $('#background').css("visibility","hidden");
+      });
       });
       firebase.auth().currentUser.sendEmailVerification().then(function() {
         // Email sent.
