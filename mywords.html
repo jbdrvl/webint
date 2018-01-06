@@ -1,13 +1,122 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title></title>
-		<link rel="stylesheet" href="/css/chloe.css">
-	</head>
-	<body>
-		<h1 id="jaja">
-			Hello
-		</h1>
-	</body>
+<html id="all">
+  <head>
+    <meta charset="utf-8">
+    <title>NappyVoc - My Words</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <script type="text/jscript" >
+      function masquer_div1(id) {
+        if (document.getElementById(id).style.display == 'none') {
+             document.getElementById(id).style.display = 'block';
+        }
+        else {
+             document.getElementById(id).style.display = 'none';
+        }
+      }
+
+    </script>
+
+  </head>
+  <body>
+    <link rel="stylesheet" href="css/chloe.css">
+    <div class="logo">
+      <img id="logo-img" src="img/logo2.svg" alt="NappyVoc Logo">
+    </div>
+    <div id="web-title">
+      <h1>My words</h1>
+    </div>
+
+    <div id="content">
+
+        <div class="col-md-4">
+          <div class="col-inner">
+            <div class="col-title">
+              <h2>Language</h2>
+            </div>
+            <div class="col-content">
+              <td><button type="button" name="languageFrench" class="my-button">French</button></td>
+                  <!-- <input type="button" value="Masquer" onclick="masquer_div('a_masquer');" />-->
+              <br>
+              <br>
+              <td><button type="button" name="languageEnglish" class="my-button">English</button></td>
+              <br>
+              <br>
+              <td><button type="button" name="languageSpanish" class="my-button" onclick="masquer_div("a_masquer1")">Spanish</button></td>
+              <br>
+              <br>
+              <td><button type="button" name="add-button" class="my-button">+</button></td>
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-md-4" >
+          <div class="col-inner" id="a_masquer1" style="display:none">
+            <div class="col-title">
+              <h2>My word</h2>
+            </div>
+            <div class="col-content">
+              <td><button type="button" name="MyWordVocab" class="my-button" onclick="masquer_div('a_masquer2');">Vocab</button></td>
+              <br>
+              <br>
+              <td><button type="button" name="MyWordKitchenVoc" class="my-button">Kitchen Voc</button></td>
+              <br>
+              <br>
+              <td><button type="button" name="MyWordShuffleTest" class="my-button">Shuffle Test</button></td>
+              <br>
+              <br>
+              <td><button type="button" name="add-button" class="my-button">+</button></td>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="col col-md-4" >
+          <div class="col-inner" id="a_masquer2" style="display:none">
+            <div class="col-title">
+              <h2>Vocab</h2>
+            </div>
+            <div class="col-content">
+              <table id="tab-spanish">
+               <tr>
+                 <td>Casa &nbsp;&nbsp;&nbsp;</td>
+                 <td>Cama &nbsp;&nbsp;&nbsp;</td>
+                 <td>Arbor&nbsp;&nbsp;&nbsp;</td>
+                 <td>Comer &nbsp;&nbsp;&nbsp;</td>
+                 <td>Beber &nbsp;&nbsp;&nbsp;</td>
+               </tr>
+               <tr>
+                 <td>Kevin</td>
+                 <td>Sol</td>
+                 <td>Cena</td>
+                 <td>Pais</td>
+                 <td>Gato</td>
+               </tr>
+              </table>
+              <br>
+              <td><button type="button" name="MyWordKitchenVoc" class="my-button" id="vocab-button">Test</button></td>
+              &nbsp;&nbsp;&nbsp;
+              <td><button type="button" name="MyWordShuffleTest" class="my-button" id="vocab-button"> Modify</button></td>
+              <br>
+              <br>
+              <td><button type="button" name="Share" class="my-button" id="vocab-button">Share</button></td>
+          </div>
+        </div>
+
+    <br>
+    <br>
+    <br>
+    <button type="button" name="Home" class="my-button" id="buttonhome">Home</button>
+
+
+    <div id="copyright">
+      <p>Copyright © NappyVoc - EURECOM WebInt project</p>
+    </div>
+    <script type="text/jscript" src="js/color.js"></script>
+    <script type="text/jscript" src="js/anime.min.js"></script>
+    <script type="text/jscript" src="js/animation.js"></script>
+    <script type="text/jscript" src="js/keep_color.js"></script>
+  </body>
 </html>

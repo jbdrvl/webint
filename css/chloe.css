@@ -1,3 +1,52 @@
-#jaja{
-  color :red;
+#content {
+  padding: 20px 5%;
+}
+
+.col-md-4 {
+  padding: 0 1%;
+  margin-bottom: 20px;
+}
+
+.col-inner {
+  margin: 3px;
+  padding: 0 5px;
+  border: 2px solid white;
+  height: 100%;
+}
+
+.col-title {
+  text-align: center;
+  border-bottom: 2px solid white;
+  margin-bottom: 10px;
+}
+
+.col-content {
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0;
+  text-align: left;
+}
+
+.col-content td {
+  vertical-align: top;
+}
+
+#tab-spanish {
+  border-collapse: collapse;
+}
+td
+{
+  border: 1px solid white;
+  font-size: 25px;
+}
+
+/* faire plus petit */
+#vocab-button {
+}
+
+/*ne fontionne pas*/
+#buttonhome {
+  display: inline-block;
+  margin : auto;
 }
