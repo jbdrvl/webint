@@ -19,7 +19,11 @@ $('document').ready(function () {
       });
       });
       firebase.auth().currentUser.sendEmailVerification().then(function() {
-        // Email sent.
+        $('#background').css("visibility","visible");
+        $('#alertinfo').html("A confirmation email has been sent");
+        $('#arrow').click(function () {
+          $('#background').css("visibility","hidden");
+        });
       }, function(error) {
       alert("error with email verification")
       });
