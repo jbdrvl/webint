@@ -1,10 +1,13 @@
 #content {
   padding: 20px 5%;
+  background-color: green;
+
 }
 
 .col-md-4 {
   padding: 0 1%;
   margin-bottom: 20px;
+  background-color: red;
 }
 
 .col-inner {
@@ -12,6 +15,7 @@
   padding: 0 5px;
   border: 2px solid white;
   height: 100%;
+
 }
 
 .col-title {
@@ -26,6 +30,7 @@
   padding-right: 10px;
   padding-top: 0;
   text-align: left;
+
 }
 
 .col-content td {
