@@ -3,26 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>NappyVoc - My Words</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- CSS LINKS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home-style.css">
+    <link rel="stylesheet" href="css/chloe.css">
+    <!-- FONTS LINKS -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-    <script type="text/jscript" >
-      function masquer_div1(id) {
-        if (document.getElementById(id).style.display == 'none') {
-             document.getElementById(id).style.display = 'block';
-        }
-        else {
-             document.getElementById(id).style.display = 'none';
-        }
-      }
-
-    </script>
 
   </head>
   <body>
-    <link rel="stylesheet" href="css/chloe.css">
+
     <div class="logo">
       <img id="logo-img" src="img/logo2.svg" alt="NappyVoc Logo">
     </div>
@@ -45,7 +38,7 @@
               <td><button type="button" name="languageEnglish" class="my-button">English</button></td>
               <br>
               <br>
-              <td><button type="button" name="languageSpanish" class="my-button" onclick="masquer_div("a_masquer1");">Spanish</button></td>
+              <td><button type="button" name="languageSpanish" class="my-button" id="spanish">Spanish</button></td>
               <br>
               <br>
               <td><button type="button" name="add-button" class="my-button">+</button></td>
@@ -54,12 +47,12 @@
         </div>
 
         <div class="col col-md-4" >
-          <div class="col-inner" id="a_masquer1" style="display:none;">
+          <div class="col-inner" id="a_masquer1" style="visibility:hidden;">
             <div class="col-title">
               <h2>My word</h2>
             </div>
             <div class="col-content">
-              <td><button type="button" name="MyWordVocab" class="my-button" onclick="masquer_div("a_masquer2");">Vocab</button></td>
+              <td><button type="button" name="MyWordVocab" class="my-button" id="vocab">Vocab</button></td>
               <br>
               <br>
               <td><button type="button" name="MyWordKitchenVoc" class="my-button">Kitchen Voc</button></td>
@@ -69,12 +62,13 @@
               <br>
               <br>
               <td><button type="button" name="add-button" class="my-button">+</button></td>
+            </div>
           </div>
         </div>
-        <br>
-        <br>
-        <div class="col col-md-4" >
-          <div class="col-inner" id="a_masquer2" style="display:none;">
+
+
+        <div class="col-md-4 col-md-8">
+          <div class="col-inner" id="a_masquer2" style="visibility:hidden;">
             <div class="col-title">
               <h2>Vocab</h2>
             </div>
@@ -104,11 +98,11 @@
               <td><button type="button" name="Share" class="my-button" id="vocab-button">Share</button></td>
           </div>
         </div>
+      </div>
+    </div>
 
-    <br>
-    <br>
-    <br>
-    <button type="button" name="Home" class="my-button" id="buttonhome">Home</button>
+
+    <button type="button" name="Home" id="buttonhome">Home</button>
 
 
     <div id="copyright">
@@ -118,5 +112,6 @@
     <script type="text/jscript" src="js/anime.min.js"></script>
     <script type="text/jscript" src="js/animation.js"></script>
     <script type="text/jscript" src="js/keep_color.js"></script>
+    <script type="text/jscript" src = "js/mywords.js"></script>
   </body>
 </html>

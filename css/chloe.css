@@ -20,6 +20,7 @@
   margin-bottom: 10px;
 }
 
+
 .col-content {
   padding-bottom: 15px;
   padding-left: 10px;
@@ -32,13 +33,14 @@
   vertical-align: top;
 }
 
+
 #tab-spanish {
   border-collapse: collapse;
 }
 td
 {
   border: 1px solid white;
-  font-size: 25px;
+  font-size: 15px;
 }
 
 /* faire plus petit */
@@ -47,6 +49,7 @@ td
 
 /*ne fontionne pas*/
 #buttonhome {
-  display: inline-block;
-  margin : auto;
+  width: 20%;
+  margin:auto;
+  text-align:center;
 }
