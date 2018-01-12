@@ -52,4 +52,6 @@ td
   width: 20%;
   margin:auto;
   text-align:center;
+  bottom : 10px;
+  vertical-align: bottom;
 }
