@@ -2,11 +2,11 @@ body {
   background-color: inherit;
   color: inherit;
   font-family: inherit;
+  font-size: 1.6em;
 }
 
 button {
   text-align: center;
-  font-size: 1.8em;
   height: 100%;
   background-color: inherit;
   border: 2px solid white;
@@ -24,7 +24,6 @@ button:hover{
   border-radius: 2em;
   cursor: pointer;
   background-color: white;
-  color: all.background-color;
   -webkit-transition: font-weight .5s, border-radius 0.5s, background-color 1s;
 }
 
