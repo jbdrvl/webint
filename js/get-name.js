@@ -1,3 +1,7 @@
 var username = localStorage.getItem('username');
 
-document.getElementById('username-span').innerHTML = username;
+usernameSpans = document.getElementsByClassName('username-span');
+
+for (var i=0; i<usernameSpans.length; i++) {
+  usernameSpans[i].innerHTML = username;
+}
