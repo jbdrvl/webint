@@ -1,15 +1,23 @@
 var colors = [
-  "#4ABDAC",
-  "#272BAD",
-  "#B56CB4",
-  "#5E8285"
+  "#89DA59",
+  "#90afc5",
+  "#ba5536",
+  "#aebd38",
+  "#e6d72a",
+  "#98dbc6",
+  "#bcbabe",
+  "#acd0c0"
 ];
 
 var second_color = [
-  "#F7B733",
-  "#D55C53",
-  "#D55C53",
-  "#63B82B"
+  "#f98866",
+  "#336b87",
+  "#a43820",
+  "#68829e",
+  "#5bc8ac",
+  "#f18d9e",
+  "#1995ad",
+  "#5f6457"
 ];
 var colourIndex = Math.floor(Math.random() * colors.length);
 //HTML5 local storage

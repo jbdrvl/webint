@@ -2,6 +2,7 @@ body {
   background-color: inherit;
   color: inherit;
   font-family: inherit;
+  font-size: 2em;
 }
 
 img {
@@ -11,9 +12,7 @@ img {
 
 button {
   text-align: center;
-  font-size: 1.8em;
   height: 100%;
-  background-color: inherit;
   border: 2px solid white;
   border-radius: 0;
   color: white;
@@ -22,6 +21,7 @@ button {
   font-size: 1.8em;
   padding: 8px;
   -webkit-transition: font-weight .5s, border-radius 0.5s, background-color 1s;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 button:hover{
@@ -65,6 +65,7 @@ button:hover{
   padding: 0 5px;
   border: 2px solid white;
   height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .col-title {
