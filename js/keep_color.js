@@ -43,7 +43,7 @@ for (var i=0; i<buttons.length; i++) {
     this.style.color = colors[colourIndex];
   });
   buttons[i].addEventListener("mouseout", function() {
-    this.style.backgroundColor="transparent";
+    this.style.backgroundColor="rgba(255, 255, 255, 0.3)";
     this.style.color = "white";
   });
 }
