@@ -5,11 +5,12 @@ function setColHeights() {
   var height0 = statsCol.offsetHeight;
   var highest = statsCol;
   if (idCardCol.offsetHeight>height0) {
-    height0 = idCardCol.offsetHeight;
+    height0 = idCardCol.offsetHeight+30;
     highest = idCardCol;
   }
   if (lastScoresCol.offsetHeight>height0) {
-    height0 = lastScoresCol.offsetHeight;
+    console.log(height0);
+    height0 = lastScoresCol.offsetHeight+30;
     highest = lastScoresCol;
   }
   statsCol.style.height = height0+"px";

@@ -86,7 +86,7 @@ button:hover{
 
 #copyright{
   width: 100%;
-  position: absolute;
+  /*position: absolute;*/
   top: 93%;
   left: 0;
   display: table;

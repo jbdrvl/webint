@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/profile-style.css">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
     <!-- Favicon Links -->
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/faviconfavicon.png" type="image/png">
@@ -15,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
   </head>
   <body>
     <div id="header">
@@ -54,6 +56,7 @@
                 <tr>
                   <td>
                     <img id="profile-pic" src="https://i.pinimg.com/564x/9e/81/2d/9e812de502edf6c0e190a79fe332fe45--female-faces-profile-pictures.jpg" alt="Profile Picture">
+                    <!--<i class="fa fa-camera-retro fa-5x"></i> fa-5x-->
                   </td>
                   <td id="user-infos" class="sec-colors">
                     <h3>Username:</br> <span id="username" class="username-span">username</span></h3>
@@ -61,6 +64,7 @@
                   </td>
                 </tr>
               </table>
+              <input type="file" name="new-pp" id="new-pp">
               <!--<img id="profile-pic" src="https://i.pinimg.com/736x/2f/27/7f/2f277fbfb452c42399ba53c966f868b7--face-makeup-beauty-makeup.jpg" alt="Profile Picture">
               <p>Userame: <span id="username">willdu93</span></p>
               <p>Rank: <span id="rank">12</span></p>-->
@@ -68,7 +72,11 @@
                 <h3>Email Address: <span id="email">emma.watson@email.com</span></h3>
                 </br>
                 <h3 id="bio-title">Biography:</h3>
-                <p id="bio-display">Hi, my name is Emma and I would like to learn French to ask Anthime out..</p>
+                <p id="bio-display">
+                  Write a few words to describe yourself!<br/>
+                  Who are you? What language do you want to learn with NappyVoc?<br/>
+                  What do you like to do for fun? Ready to learn?
+                </p>
                 <textarea name="bio-field" id="bio-edit-field"></textarea>
                 <p id="edit-bio">Edit</p>
                 <p id="save-bio">Save</p>
@@ -138,15 +146,16 @@
         </div>
       </div>
     </div>
-    <div id="copyright">
+    <footer id="copyright">
       <p>Copyright © NappyVoc - EURECOM WebInt project</p>
-    </div>
+    </footer>
     <!--<script type="text/jscript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
     <script type="text/jscript" src="js/keep_color.js"></script>
     <script type="text/jscript" src="js/editbio.js"></script>
     <script type="text/jscript" src="js/graph.js"></script>
     <script type="text/jscript" src="js/get-name.js"></script>
     <script type="text/jscript" src="js/anime.min.js"></script>
+    <script type="text/jscript" src="js/profile-pic.js"></script>
     <script type="text/jscript" src="js/animation.js"></script>
     <script type="text/javascript" src="js/profile-height.js"></script>
   </body>
