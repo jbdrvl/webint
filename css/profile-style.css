@@ -94,6 +94,20 @@ button:hover{
   color: white
 }
 
+.graph-wrapper {
+  display: block;
+  margin: 20px auto;
+  border: 2px solid white;
+  width: 99%;
+  height: 25%;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#c {
+  width: 100%;
+}
+
 /* ID CARD COL */
 
 #profile-pic {
