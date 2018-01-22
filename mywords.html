@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- CSS LINKS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/home-style.css">
     <link rel="stylesheet" href="css/chloe.css">
     <!-- FONTS LINKS -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -15,16 +14,19 @@
 
   </head>
   <body>
-
-    <div class="logo">
-      <img id="logo-img" src="img/logo2.svg" alt="NappyVoc Logo">
-    </div>
-    <div id="web-title">
-      <h1>My words</h1>
+    <div class="banner">
+      <div class="logo">
+        <img id="logo-img" src="img/logo2.svg" alt="NappyVoc Logo">
+      </div>
+      <div id="web-title">
+        <h1>My words</h1>
+      </div>
+      <div id="back-to-home-button">
+        <button type="button" name="my-profile" class="my-button" onclick="window.location='home.html'">Back Home</button>
+      </div>
     </div>
 
     <div id="content">
-
         <div class="col-md-4">
           <div class="col-inner">
             <div class="col-title">
@@ -96,25 +98,22 @@
               <br>
               <br>
               <td><button type="button" name="Share" class="my-button" id="vocab-button">Share</button></td>
+            </div>
           </div>
         </div>
-      </div>
     </div>
-</body>
-
-<footer>
-
-
-    <button type="button" name="Home" id="buttonhome">Home</button>
-
 
     <div id="copyright">
       <p>Copyright © NappyVoc - EURECOM WebInt project</p>
     </div>
+
+    <script type="text/javascript">
+      localStorage.setItem("tab",0);
+    </script>
     <script type="text/jscript" src="js/color.js"></script>
     <script type="text/jscript" src="js/anime.min.js"></script>
     <script type="text/jscript" src="js/animation.js"></script>
     <script type="text/jscript" src="js/keep_color.js"></script>
-    <script type="text/jscript" src = "js/mywords.js"></script>
-  </footer>
+    <script type="text/jscript" src="js/mywords.js"></script>
+  </body>
 </html>
