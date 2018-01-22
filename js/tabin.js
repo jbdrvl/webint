@@ -1,15 +1,23 @@
 var colors = [
-  "#4ABDAC",
-  "#272BAD",
-  "#B56CB4",
-  "#5E8285"
+  "#89DA59",
+  "#90afc5",
+  "#ba5536",
+  "#aebd38",
+  "#e6d72a",
+  "#98dbc6",
+  "#bcbabe",
+  "#acd0c0"
 ];
 
 var second_color = [
-  "#F7B733",
-  "#D55C53",
-  "#D55C53",
-  "#63B82B"
+  "#f98866",
+  "#336b87",
+  "#a43820",
+  "#68829e",
+  "#5bc8ac",
+  "#f18d9e",
+  "#1995ad",
+  "#5f6457"
 ];
 localStorage.setItem("tab",1);
 var colourIndex = localStorage.getItem("color");
@@ -31,7 +39,13 @@ $('document').ready(function () {
     $('#form-signup-container').css({visibility:"visible", opacity: 0.0}).animate({opacity: 1.0},200);
     $('#data_login').css("visibility","hidden");
     if (mq.matches){
-
+      $('#logo').css("width","20vh");
+      $('#logo').css("height","20vh");
+      $('#logo').css("top","9%");
+      $('#login-form').css("top","48%");
+      $('#login-form').css("height","45%");//TODO
+      $('#login-title').css("height","20%");
+      $('#buttons_container').css("height","20%");
     } else {
       $('#logo').css("width","30vh");
       $('#logo').css("height","30vh");
@@ -82,7 +96,13 @@ $('document').ready(function () {
     $('#data_login').css("visibility","visible");
 
     if (mq.matches) {
-
+      $('#logo').css("width","50%");
+      $('#logo').css("height","40%");
+      $('#logo').css("top","9%");
+      $('#login-form').css("top","68%");
+      $('#login-form').css("height","50%");
+      $('#login-title').css("height","15%");
+      $('#buttons_container').css("height","15%");
     } else {
       $('#logo').css("width","45vh");
       $('#logo').css("height","45vh");
