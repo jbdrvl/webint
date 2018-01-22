@@ -1,9 +1,3 @@
-html{
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-}
-
 #logo{
   width: 40%;
   height: 40%;
@@ -440,7 +434,6 @@ label {
     padding:0;
   }
   #buttons_container{
-    /* background-color: green; */
     position: relative;
     top: 15%;
     left: 0;
@@ -452,6 +445,7 @@ label {
     height: 80%;
     font-size: 2.5em;
     left : 75%;
+    top : 40%;
     transform: translate(-50%,-50%);
   }
   #signin{
@@ -459,6 +453,7 @@ label {
     height: 80%;
     font-size: 2.5em;
     left : 25%;
+    top : 40%;
     transform: translate(-50%,-50%);
   }
   #login-title{
@@ -509,4 +504,60 @@ label {
   input{
     font-size: 2.5em;
   }
+  #form-signup-container{
+    top: 24%;
+    height: 76%;
+  }
+  #email-container{
+    height: 13%;
+  }
+  #reemail-container{
+    height: 13%;
+    top: 17.4%;
+  }
+  #Spassword-container{
+    height: 13%;
+    top:34.8%;
+    width: 100%;
+  }
+  #SRpassword-container{
+    height: 13%;
+    top:52.2%;
+    left:0;
+    width: 100%;
+  }
+  #Susername-container{
+    height: 13%;
+    top:69.6%;
+    left:0;
+    width: 100%;
+  }
+  #signup-button{
+    height: 13%;
+    top:87%;
+    left:50%;
+    transform: translate(-50%,0%);
+    width: 50%;
+    font-size: 2.5em;
+  }
+  #arrow{
+    position: relative;
+    left: 98%;
+    padding: 0;
+    margin: 0;
+    width: 2.5em;
+    height: 2.5em;
+  }
+  #cross{
+  }
+  #message{
+    width: 90%;
+    height: 25%;
+  }
+  #message p {
+    font-size: 3.5em;
+  }
+
+
+
 }

@@ -42,10 +42,11 @@ $('document').ready(function () {
       $('#logo').css("width","20vh");
       $('#logo').css("height","20vh");
       $('#logo').css("top","9%");
-      $('#login-form').css("top","48%");
-      $('#login-form').css("height","45%");//TODO
-      $('#login-title').css("height","20%");
-      $('#buttons_container').css("height","20%");
+      $('#login-form').css("top","60%");
+      $('#login-form').css("height","65%");//TODO
+      $('#login-title').css("height","12%");
+      $('#buttons_container').css("height","12%");
+      $('#buttons_container').css("top","12%");
     } else {
       $('#logo').css("width","30vh");
       $('#logo').css("height","30vh");
@@ -103,6 +104,7 @@ $('document').ready(function () {
       $('#login-form').css("height","50%");
       $('#login-title').css("height","15%");
       $('#buttons_container').css("height","15%");
+      $('#buttons_container').css("top","15%");
     } else {
       $('#logo').css("width","45vh");
       $('#logo').css("height","45vh");
