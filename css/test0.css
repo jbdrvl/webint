@@ -51,12 +51,13 @@ button {
   height: 100%;
   background-color: inherit;
   border: 2px solid white;
-  border-radius: 15px;
+  border-radius: 0;
   color: white;
   text-decoration: none;
   font-family: inherit;
   font-size: 1.8em;
   padding: 8px;
+  outline: none;
   -webkit-transition: font-weight .5s, border-radius 0.5s, background-color 1s;
 }
 .button:hover{

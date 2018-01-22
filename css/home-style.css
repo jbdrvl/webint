@@ -16,6 +16,7 @@ button {
   font-family: inherit;
   font-size: 1.8em;
   padding: 8px;
+  outline: none;
   -webkit-transition: font-weight .5s, border-radius 0.5s, background-color 1s;
 }
 
@@ -73,11 +74,21 @@ button:hover{
   width: 100%;
 }
 
-#copyright{
+/* #copyright{
   width: 100%;
   color: white;
-  /*position: absolute;*/
   top: 90%;
+  left: 0;
+  display: table;
+}
+#copyright p {
+  text-align: center;
+} */
+
+#copyright{
+  width: 100%;
+  position: absolute;
+  top: 93%;
   left: 0;
   display: table;
 }

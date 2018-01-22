@@ -1,32 +1,33 @@
-#logo{
-  width: 45vh;
-  height: 45vh;
+html{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
 
-  position:absolute; /*it can be fixed too*/
-    left:0; right:0;
-    top:0; bottom:7em;
+#logo{
+  width: 40%;
+  height: 40%;
+
+  position:absolute;
+    left:50%;
+    top:17%;
     margin:auto;
-    /*border: 1px solid;*/
+    transform: translate(-50%,0);
+
 
   animation: appearing 3s;
   -webkit-animation: appearing 3s;
   transition: width 1s, height 1s, bottom 1s;
 }
 .bubble-m {
-  /* stroke: #;
-  stroke-dasharray: 4,2; */
-  width: 30vh;
-  position: absolute;
-    left: 30%;
-    top: 30%;
-  transform: translateX(-50%);
-
+  width: 100%;
 }
 #bubble{
   transform: rotate(-15deg);
   visibility: hidden;
-  width: 100%;
-  height: 100%;
+  position: absolute;
+    left : 26%;
+  width: 20%;
 }
 
 @keyframes logo_animation {
@@ -112,7 +113,7 @@
   left: 0;
   width: 30%;
   height: 45%;
-  display: table;
+  /* display: table; */
 }
 #signin{
   position: absolute;
@@ -421,66 +422,91 @@ label {
 }
 
 @media only screen and (max-device-width: 480px) {
-  .logo{
-    position:absolute; /*it can be fixed too*/
-    left:0;
-    bottom:38em;
-    margin:auto;
+  #web-title h1{
+    font-size: 8em;
   }
-  #names{
-    padding-top: 1em;
-    font-size: 1.5em;
+  #logo{
+    top:9%;
+    width: 50%;
   }
   #copyright p{
     font-size: 2em;
   }
   #login-form{
-    top: 70%;
+    top: 68%;
 
     width: 90%;
-    height: 47%;
+    height: 50%;
     padding:0;
   }
-  #login-title{
-    height: 20%;
-  }
-  #login-title p {
-    font-size: 3em;
-    animation-delay: 4s;
-  }
-  #container{
-    top: 20%;
-    height: 60%;
-  }
-  #username {
-    width: 90%;
-    height: 40%;
-    padding-left: 10%;
-    font-size: 3em;
-  }
-  #password {
-    position: absolute;
-    top: 40%;
-    left: 0;
-
-    width: 90%;
-    height: 40%;
-    padding-left: 10%;
-    font-size: 3em;
-  }
-  #login {
-    position: absolute;
-    top: 80%;
+  #buttons_container{
+    /* background-color: green; */
+    position: relative;
+    top: 15%;
     left: 0;
     width: 100%;
-    height: 30%;
-    font-size: 3em;
+    height: 15%;
+  }
+  #signup{
+    width : 40%;
+    height: 80%;
+    font-size: 2.5em;
+    left : 75%;
+    transform: translate(-50%,-50%);
+  }
+  #signin{
+    width : 40%;
+    height: 80%;
+    font-size: 2.5em;
+    left : 25%;
+    transform: translate(-50%,-50%);
+  }
+  #login-title{
+    height: 15%;
+    /* background-color: black; */
+  }
+  #login-title p{
+    font-size: 4.5em;
+  }
+  #form-login-container{
+    height: 55%;
+    top: 35%;
+    width: 100%;
+  }
+  #username-container{
+    top:0%;
+    width: 100%;
+    left: 0%;
+    height: 32.5%;
+  }
+  #password-container{
+    top:37.5%;
+    left:0%;
+    width: 100%;
+    height: 32.5%;
+  }
+  #login{
+    top: 75%;
+    left:50%;
+    transform: translate(-50%,0);
+    width: 50%;
+    height: 25%;
+    font-size: 2em;
   }
   #data_login{
-    top: 86%;
-    height: 14%;
+    top: 87.5%;
+    height: 15%;
   }
-  #data_login p {
-    font-size: 3em;
+  #data_login p{
+    font-size:2em;
+  }
+  label {
+    font-size: 2.7em;
+  }
+  .active {
+    font-size: 2.5em;
+  }
+  input{
+    font-size: 2.5em;
   }
 }
