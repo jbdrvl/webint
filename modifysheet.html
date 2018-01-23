@@ -8,8 +8,14 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+      <!-- Favicon Links -->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/faviconfavicon.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/faviconfavicon-32.png" type="image/png">
+    <link rel="icon" sizes="64x64" href="img/faviconfavicon-64.png" type="image/png">
+    <link rel="icon" sizes="96x96" href="img/faviconfavicon-96.png" type="image/png">
   </head>
-  <body>
+  <header>
     <div id="header" align="center">
       <table>
         <td class="logo">
@@ -19,16 +25,16 @@
           <h1 id="web-title">Modify sheet</h1>
         </td>
       </table>
-    </div>
-    <div id=titre align="center">
+    </header>
+    <section id=titre align="center">
     	<tr>
 			<td align="center">Title</td>
 			<td align="center"><input type="text" id="elt1" name="elt1" value="food related spanish vocabulary"/></td>
 		</tr>
-	</div>
+	</section>
 	<br>
 	<br>
-	<div id=language align="center">
+	<section id=language align="center">
     	<tr>
 			<h2 align="center" id=titrelanguage>language</h2>
 			<form>
@@ -47,10 +53,10 @@
 			</form>
 
 		</tr>
-	</div>
+	</section>
 	<br>
 	<br>
-	<div id=words align="center">	
+	<section id=words align="center">	
 		<tr>
 			<input type="text" name="Word1" id="word1" placeholder="Word" required="" autofocus="" align="center" value="agua"/><input type="text" name="translation1" id="trans1" placeholder="translation" required="" autofocus="" align="center" value ="water"/>
 		</tr>
@@ -89,22 +95,22 @@
     <tr>
       <input type="text" name="Word8" id="word8" placeholder="Word" required="" autofocus="" align="center" value="vino"/><input type="text" name="translation8" id="trans8" placeholder="translation" required="" autofocus="" align="center" value ="wine"/>
     </tr>
-	</div>
-	<div id=plusbutton align="center">
+	</section>
+	<section id=plusbutton align="center">
 		<br>
 		<td><button type="button" id =plusbut onclick="addField()" class="my-button">Add a new field</button></td>
-	</div>
+	</section>
 <br>
 <br>
-<div id=subbut align=center>
+<section id=subbut align="center">
 	<button type="button" id=submitbut class="my-button" onclick="window.location='mywords.html'">Submit</button>	
-</div>
+</section>
 </body>
 
 
-<div id="copyright" align=center>
+<footer id="copyright" align=center>
     <p>Copyright © NappyVoc - EURECOM webint project</p>
-</div>
+</footer>
 
 <!--SCRIPTS GOES HERE -->
     <script type="text/jscript" src="js/add.js"></script>
