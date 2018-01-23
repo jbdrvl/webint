@@ -27,18 +27,17 @@
     </td>
     <td>
       <h1>NappyVoc</h1>
-      <h2>Training Arena - Level 0 </h2>
-
+      <h2>Training Arena - Level 1 </h2>
     </td>
   </table>
 </header>
-
 <article>
   <div id="pass" align='center'>
     <div id="pass">
       <button id="myBtn" type="button" name="Pass" class="my-button" onclick="window.location='test0.html'" ></button>
     </div>
   </div>
+
   <div id="choice">
     <div class="row">
       <div class="col-sm-6">
@@ -48,9 +47,6 @@
               <button id="button1" type="button" name="button1" class="my-button" >Kevin</button>
             </tr>
             <br>
-            <tr>
-              <button id="button2" type="button" name="button2" class="my-button"style="margin-top: 2%;">Ours</button>
-            </tr>
           </table>
         </div>
       </div>
@@ -58,17 +54,15 @@
         <div class="col-inner">
           <table>
             <tr>
-              <button id="button3" type="button" name="button3" class="my-button">Maison</button>
+              <button id="button2" type="button" name="button3" class="my-button">Maison</button>
             </tr>
             <br>
-            <tr>
-              <button id="button4" type="button" name="button4" class="my-button"style="margin-top: 2%;">Chaise</button>
-            </tr>
           </table>
         </div>
       </div>
     </div>
   </div>
+
   <div id="home-b">
     <div id="home-b-button">
       <button type="button" name="my-profile" class="my-button" onclick="window.location='training_arena_home.html'">Home Arena</button>
@@ -94,7 +88,7 @@
 
   document.getElementById("myBtn").innerHTML = voc[i];
 
-  var l= [i,getRandomIntInclusive(0,voc.length -1),getRandomIntInclusive(0,voc.length -1),getRandomIntInclusive(0,voc.length -1)]
+  var l= [i,getRandomIntInclusive(0,voc.length -1)]
 
   function shuffle(a) {
       var j, x, i;
@@ -108,10 +102,8 @@
 
   shuffle(l);
 
-  document.getElementById("button1").innerHTML = vocf[l[1]];
-  document.getElementById("button2").innerHTML = vocf[l[2]];
-  document.getElementById("button3").innerHTML = vocf[l[3]];
-  document.getElementById("button4").innerHTML = vocf[l[0]];
+  document.getElementById("button1").innerHTML = vocf[l[0]];
+  document.getElementById("button2").innerHTML = vocf[l[1]];
 
   var y = document.getElementById("myBtn").innerHTML;
   var x = document.getElementById("myBtn");
