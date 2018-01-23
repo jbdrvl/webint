@@ -26,11 +26,11 @@ button {
 }
 
 button:hover{
-  background-color: rgba(0,0,0,0.1);
+  /*background-color: rgba(0,0,0,0.1);*/
   border-radius: 2em;
   cursor: pointer;
   background-color: white;
-  color: all.background-color;
+  /*color: all.background-color;*/
   -webkit-transition: font-weight .5s, border-radius 0.5s, background-color 1s;
 }
 
@@ -40,7 +40,7 @@ header table {
 
 /*  @media screen and (max-width: 699px) - small screens
     @media screen and (max-width: 1000px) and (min-width: 700px) - medium screens
-    @media screen and (min-width: 1001px) - wide screens 
+    @media screen and (min-width: 1001px) - wide screens
 */
 
 .logo {
@@ -191,10 +191,6 @@ header table {
   width: 100%;
   font-family: 'Lato', sans-serif;
   color: black;
-}
-
-#edit-bio {
-  font-style: underline;
 }
 
 #edit-bio:hover, #save-bio:hover {
