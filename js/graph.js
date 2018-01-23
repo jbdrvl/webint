@@ -2,7 +2,7 @@
 
 $(function () {
   Highcharts.setOptions({
-    colors: ['rgba(255, 255, 255, 0.3)'],//white'],//#67BCE6'],
+    colors: ['rgba(255, 255, 255, 0.3)'],
     chart: {
         style: {
             fontFamily: 'sans-serif',
@@ -56,6 +56,9 @@ $(function () {
             },
         legend: {
             enabled: false,
+        },
+        navigation: {
+          menuItemHoverStyle: {color: "lime"}
         },
         credits: {
             enabled: false
