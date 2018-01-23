@@ -37,7 +37,9 @@ try {
 }
 
 buttons = document.getElementsByTagName("button");
+
 for (var i=0; i<buttons.length; i++) {
+  buttons[i].style.backgroundColor="rgba(255, 255, 255, 0.3)";
   buttons[i].addEventListener("mouseover", function() {
     this.style.backgroundColor="white";
     this.style.color = colors[colourIndex];

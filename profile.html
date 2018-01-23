@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/profile-style.css">
-    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <script src="https://use.fontawesome.com/14192563b5.js"></script>
     <!-- Favicon Links -->
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/faviconfavicon.png" type="image/png">
@@ -17,9 +17,11 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
     <script src="js/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
   </head>
   <body>
-    <div id="header">
+    <header>
       <table>
         <td class="logo">
           <img id="logo-img" src="img/logo2.svg" alt="NappyVoc Logo">
@@ -28,7 +30,7 @@
           <h1>My NappyVoc Profile</h1>
         </td>
       </table>
-    </div>
+    </header>
     <div id="content">
       <div class="row">
         <div class="col-md-4" id="stats">
@@ -40,8 +42,9 @@
               <h3 class="sec-colors">Overall Average: <span id="overall-average">86%</span></h3>
               <h3 class="sec-colors">Average over 10 last units: <span id="last-ten-average">92%</span></h3>
               <h3 class="sec-colors">Overall Improvement:</h3>
-              <div class="graph-wrapper">
-                <canvas id='c'></canvas>
+              <div class="aspect-ratio">
+                <div id="chart" style="width:100%; height:400px;"></div>
+                <!--<canvas id='chart'></canvas>-->
               </div>
             </div>
           </div>
@@ -56,27 +59,19 @@
                 <tr>
                   <td>
                     <img id="profile-pic" src="https://i.pinimg.com/564x/9e/81/2d/9e812de502edf6c0e190a79fe332fe45--female-faces-profile-pictures.jpg" alt="Profile Picture">
-                    <!--<i class="fa fa-camera-retro fa-5x"></i> fa-5x-->
+                    <div id="user-pic-outter"><i id="user-pic" class="fa fa-user fa-5x"></i></div>
                   </td>
                   <td id="user-infos" class="sec-colors">
-                    <h3>Username:</br> <span id="username" class="username-span">username</span></h3>
-                    <h3>Rank:</br> <span id="rank">1st</span></h3>
+                    <h3>Username: <span id="username" class="username-span">username</span></h3>
+                    <h3>Rank: <span id="rank">1st</span></h3>
                   </td>
                 </tr>
               </table>
               <input type="file" name="new-pp" id="new-pp">
-              <!--<img id="profile-pic" src="https://i.pinimg.com/736x/2f/27/7f/2f277fbfb452c42399ba53c966f868b7--face-makeup-beauty-makeup.jpg" alt="Profile Picture">
-              <p>Userame: <span id="username">willdu93</span></p>
-              <p>Rank: <span id="rank">12</span></p>-->
               <div id="bio" class="sec-colors">
                 <h3>Email Address: <span id="email">emma.watson@email.com</span></h3>
-                </br>
                 <h3 id="bio-title">Biography:</h3>
-                <p id="bio-display">
-                  Write a few words to describe yourself!<br/>
-                  Who are you? What language do you want to learn with NappyVoc?<br/>
-                  What do you like to do for fun? Ready to learn?
-                </p>
+                <p id="bio-display">Write a few words to describe yourself!<br/>Who are you? What language do you want to learn with NappyVoc?<br/>What do you like to do for fun? Ready to learn?</p>
                 <textarea name="bio-field" id="bio-edit-field"></textarea>
                 <p id="edit-bio">Edit</p>
                 <p id="save-bio">Save</p>
