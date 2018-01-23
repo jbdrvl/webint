@@ -18,4 +18,9 @@ function setColHeights() {
   lastScoresCol.style.height = height0+"px";
   document.getElementById("scores-scroll").style.height = (height0-110)+"px";
 }
-setColHeights();
+
+if (window.outerWidth>1000) {
+  setColHeights();
+} else {
+  document.getElementById("scores-scroll").style.height = "400px";
+}

@@ -5,23 +5,6 @@ body {
   font-size: 2em;
 }
 
-@media screen and (max-width: 699px) {
-  /* small screens */
-  body {font-size: 2.5em;}
-  button {font-size: 2.2em;}
-  #web-title h1{font-size: 6em;}
-  .date {font-size: 1.2em;}
-  .score-infos {font-size: 1.5em;}
-}
-
-@media screen and (max-width: 1000px) and (min-width: 700px) {
-  /* medium screens */
-}
-
-@media screen and (min-width: 1001px) {
-  /* wide screens */
-}
-
 img {
   max-width:100%;
   max-height:100%;
@@ -37,6 +20,7 @@ button {
   font-family: inherit;
   font-size: 1.8em;
   padding: 8px;
+  outline: none;
   -webkit-transition: font-weight .5s, border-radius 0.5s, background-color 1s;
   background-color: rgba(255, 255, 255, 0.3);
 }
@@ -54,6 +38,11 @@ header table {
   margin: 0 auto;
 }
 
+/*  @media screen and (max-width: 699px) - small screens
+    @media screen and (max-width: 1000px) and (min-width: 700px) - medium screens
+    @media screen and (min-width: 1001px) - wide screens 
+*/
+
 .logo {
     width: 23vh;
     height: 23vh;
@@ -66,6 +55,12 @@ header table {
   margin: 0;
   text-align: center;
   font-weight:bold;
+}
+
+@media screen and (max-width: 1000px) {
+  body {padding: 10px;}
+  .logo {width: 20vh; height: 20vh}
+  #logo-title {font-size: 3em;}
 }
 
 #content {
@@ -95,6 +90,7 @@ header table {
   margin-right: 15%;
 }
 
+
 .col-content {
   padding-bottom: 15px;
   padding-left: 10px;
@@ -105,6 +101,12 @@ header table {
 
 .col-content td {
   vertical-align: top;
+}
+
+@media screen and (max-width: 1000px) {
+  .col-title h2 {font-size: 2.7em;}
+  .col-content h3 {font-size: 1.5em;}
+  .col-content {padding: 30px;}
 }
 
 /* STATS COL */
@@ -140,14 +142,15 @@ header table {
 /* ID CARD COL */
 
 #profile-pic {
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 120px;
+  max-height: 120px;
   margin: 10px;
 }
 
-@media screen and (max-width: 1000px) and (min-width: 700px) {
+@media screen and (max-width: 1000px) {
   /* medium screens */
-  #profile-pic {margin-right: 50px}
+  #profile-pic-outter {width: 20%; }
+  #profile-pic {max-width: 200px; max-height: 200px; margin-right: 50px}
   #username, #rank {float: none; margin-left: 10px}
 }
 
@@ -220,6 +223,12 @@ header table {
   padding-right: 10px;
   overflow:hidden;
   overflow-y:scroll;
+}
+
+@media screen and (max-width: 1000px) {
+  .quizz-infos {font-size: 2em;}
+  .date {font-size: 1.2em;}
+  .score-infos {font-size: 1.5em}
 }
 
 /* BACK HOME button */
