@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html id="all">
+  <head>
+    <meta charset="utf-8">
+    <title>NappyVoc - Training Arena - Level 0</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/test0.css">
+    <!-- Favicon Links -->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/faviconfavicon.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/faviconfavicon-32.png" type="image/png">
+    <link rel="icon" sizes="64x64" href="img/faviconfavicon-64.png" type="image/png">
+    <link rel="icon" sizes="96x96" href="img/faviconfavicon-96.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+  </head>
+  <body>
+
+<header>
+  <table align='center'>
+    <td class="logo">
+      <img id="logo-img" src="img/logo2.svg" alt="NappyVoc Logo">
+    </td>
+    <td>
+      <h1>NappyVoc</h1>
+      <h2>Training Arena - Level 2 </h2>
+    </td>
+  </table>
+</header>
+<article>
+  <div id="pass" align='center'>
+    <div id="pass">
+      <button id="myBtn" type="button" name="Pass" class="my-button" onclick="window.location='test0.html'" ></button>
+    </div>
+  </div>
+
+  <div id="choice">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="col-inner">
+              <input type="text" name="Word1" id="word1" class="answer_but" placeholder="Answer" required="" autofocus="" align="center"/>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="col-inner">
+          <table>
+            <tr>
+              <button id="Submitb" type="button" name="Submit" class="my-button">Submit</button>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="home-b">
+    <div id="home-b-button">
+      <button type="button" name="my-profile" class="my-button" onclick="window.location='training_arena_home.html'">Home Arena</button>
+    </div>
+  </div>
+
+</article>
+
+<footer>
+    <p>Copyright © NappyVoc - EURECOM WebInt project</p>
+</footer>
+
+<script>
+
+  function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min +1)) + min;
+  }
+
+  var voc = ["Oso", "Kevin", "Casa", "Ciudad", "	analista financiero", "árbitro" , "abogado", "basquetbolista","boxeador", "leñador", "	cirujano" ];
+  var vocf = ["Ours", "Kevin", "Maison", "Ville", "analyste financier", "arbitre","avocat", "basketeur", "boxeur", "bûcheron", "chirurgien" ];
+  var i = getRandomIntInclusive(0,voc.length -1);
+
+  document.getElementById("myBtn").innerHTML = voc[i];
+
+  var y = document.getElementById("myBtn").innerHTML;
+  var x = document.getElementById("myBtn");
+  x.addEventListener("mouseover", myFunction);
+  x.addEventListener("mouseout", mySecondFunction);
+
+
+  function myFunction() {
+      document.getElementById("myBtn").innerHTML = "Next word";
+  }
+
+  function mySecondFunction() {
+      document.getElementById("myBtn").innerHTML = y;
+  }
+
+</script>
+<script type="text/jscript" src="js/test0.js"></script>
+<script type="text/jscript" src="js/color.js"></script>
+<script type="text/jscript" src="js/anime.min.js"></script>
+<script type="text/jscript" src="js/animation.js"></script>
+<script type="text/jscript" src="js/keep_color.js"></script>
+  </body>
+</html>
