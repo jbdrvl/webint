@@ -19,6 +19,27 @@ body {
   font-weight:bold;
 }
 
+input{
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 45%;
+  display: inline;
+  text-align: center;
+  margin: 0 auto;
+
+}
+
+#plusbut{
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 45%;
+  display: table;
+  text-align: center;
+  margin: 0 auto;
+}
+
 #submitbut{
   top: 0;
   left: 0;
