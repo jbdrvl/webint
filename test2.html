@@ -32,7 +32,7 @@
 <article>
   <div id="pass" align='center'>
     <div id="pass">
-      <button id="myBtn" type="button" name="Pass" class="my-button" onclick="window.location='test0.html'" ></button>
+      <button id="myBtn" type="button" name="Pass" class="my-button" onclick="window.location='test2.html'"  ></button>
     </div>
   </div>
 
@@ -47,7 +47,7 @@
         <div class="col-inner">
           <table>
             <tr>
-              <button id="Submitb" type="button" name="Submit" class="my-button">Submit</button>
+              <button id="Submitb" type="button" name="Submit" class="my-button" onclick="function1()">Submit</button>
             </tr>
           </table>
         </div>
@@ -55,6 +55,10 @@
     </div>
   </div>
 
+  <article id="score">
+      <p id='visu'>test</p>
+  </article>
+  
   <div id="home-b">
     <div id="home-b-button">
       <button type="button" name="my-profile" class="my-button" onclick="window.location='training_arena_home.html'">Home Arena</button>
@@ -94,12 +98,24 @@
   function mySecondFunction() {
       document.getElementById("myBtn").innerHTML = y;
   }
-
+  document.getElementById("visu").innerHTML = vocf[i];
+  var e = document.getElementById("visu").innerHTML;
+  function function1(){
+  if(  document.getElementById("word1").value==e){
+      localStorage.setItem("score", parseInt(localStorage.getItem("score")) + 1)
+      localStorage.setItem("total", parseInt(localStorage.getItem("total")) + 1)
+      window.location='test2.html'
+    } else {
+      localStorage.setItem("total", parseInt(localStorage.getItem("total")) + 1)
+      window.location='test2.html'
+    }
+  }
+  document.getElementById("visu").innerHTML = ("score:  " + localStorage.getItem('score') + "/" + localStorage.getItem('total') );
 </script>
 <script type="text/jscript" src="js/test0.js"></script>
 <script type="text/jscript" src="js/color.js"></script>
 <script type="text/jscript" src="js/anime.min.js"></script>
 <script type="text/jscript" src="js/animation.js"></script>
-<script type="text/jscript" src="js/keep_color.js"></script>
+
   </body>
 </html>

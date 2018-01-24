@@ -118,6 +118,20 @@ text-align: center;
 #choice button {
   width: 100%;
 }
+/* Score CSS:  */
+#score {
+  margin-left: 40%;
+  text-align: center;
+  width: 20%;
+  height: 5%;
+  background-color: inherit;
+  border: 2px solid white;
+  font-family: inherit;
+  color: white;
+  padding: 0.5%;
+  font-size: 130%;
+}
+
 
 /* Home Arena CSS:  */
 #inside{
@@ -127,10 +141,8 @@ text-align: center;
 /* Level 2 CSS */
 input {
   text-align: center;
-
   width: 100%;
   height: 100%;
-  border: none;
   background-color: inherit;
   border: 2px solid white;
   font-family: inherit;
