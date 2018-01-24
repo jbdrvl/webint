@@ -34,7 +34,7 @@
 <article>
   <div id="pass" align='center'>
     <div id="pass">
-      <button id="myBtn" type="button" name="Pass" class="my-button" onclick="window.location='test1.html'" ></button>
+      <button id="myBtn" type="button" name="Pass" class="my-button" onclick="functionx()" ></button>
     </div>
   </div>
 
@@ -84,8 +84,8 @@
     return Math.floor(Math.random() * (max - min +1)) + min;
   }
 
-  var voc = ["Oso", "Kevin", "Casa", "Ciudad", "	analista financiero", "árbitro" , "abogado", "basquetbolista","boxeador", "leñador", "	cirujano" ];
-  var vocf = ["Ours", "Kevin", "Maison", "Ville", "analyste financier", "arbitre","avocat", "basketeur", "boxeur", "bûcheron", "chirurgien" ];
+  var voc = ["Oso", "Kevin", "Casa", "Ciudad", "	Analista Financiero", "Árbitro" , "Abogado", "Basquetbolista","Boxeador", "Leñador", "	Cirujano" ];
+  var vocf = ["Ours", "Kevin", "Maison", "Ville", "Analyste Financier", "Arbitre","Avocat", "Basketeur", "Boxeur", "Bûcheron", "Chirurgien" ];
   var i = getRandomIntInclusive(0,voc.length -1);
   document.getElementById("visu").innerHTML = vocf[i];
   var e = document.getElementById("visu").innerHTML;
@@ -122,14 +122,19 @@
       document.getElementById("myBtn").innerHTML = y;
   }
 
+  function functionx(){
+  window.location='test1.html'
+  localStorage.setItem("total", parseInt(localStorage.getItem("total")) + 1)
+  }
+
+
   function function1(){
     if(  document.getElementById("button1").innerHTML==e){
         localStorage.setItem("score", parseInt(localStorage.getItem("score")) + 1)
         localStorage.setItem("total", parseInt(localStorage.getItem("total")) + 1)
         window.location='test1.html'
     } else {
-        localStorage.setItem("total", parseInt(localStorage.getItem("total")) + 1)
-        window.location='test1.html'
+        document.getElementById("myBtn").innerHTML = e;
     }
   }
   function function2(){
@@ -138,8 +143,7 @@
         localStorage.setItem("total", parseInt(localStorage.getItem("total")) + 1)
         window.location='test1.html'
     } else {
-        localStorage.setItem("total", parseInt(localStorage.getItem("total")) + 1)
-        window.location='test1.html'
+        document.getElementById("myBtn").innerHTML = e;
     }
   }
   document.getElementById("visu").innerHTML = ("score:  " + localStorage.getItem('score') + "/" + localStorage.getItem('total') );

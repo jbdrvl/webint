@@ -35,7 +35,7 @@
 
 <article>
   <div id="pass" align='center'>
-      <button id="myBtn" type="button" name="Pass" class="my-button" onclick="function0()'" ></button>
+      <button id="myBtn" type="button" name="Pass" class="my-button" onclick="functionx()" ></button>
   </div>
   <div id="choice">
     <div class="row">
@@ -89,8 +89,8 @@
     return Math.floor(Math.random() * (max - min +1)) + min;
   }
 
-  var voc = ["Oso", "Kevin", "Casa", "Ciudad", "	analista financiero", "árbitro" , "abogado", "basquetbolista","boxeador", "leñador", "	cirujano" ];
-  var vocf = ["Ours", "Kevin", "Maison", "Ville", "analyste financier", "arbitre","avocat", "basketeur", "boxeur", "bûcheron", "chirurgien" ];
+  var voc = ["Oso", "Kevin", "Casa", "Ciudad", "	Analista Financiero", "Árbitro" , "Abogado", "Basquetbolista","Boxeador", "Leñador", "	Cirujano" ];
+  var vocf = ["Ours", "Kevin", "Maison", "Ville", "Analyste Financier", "Arbitre","Avocat", "Basketeur", "Boxeur", "Bûcheron", "Chirurgien" ];
   var i = getRandomIntInclusive(0,voc.length -1);
 
   document.getElementById("myBtn").innerHTML = voc[i];
@@ -120,6 +120,11 @@
   x.addEventListener("mouseover", myFunction);
   x.addEventListener("mouseout", mySecondFunction);
 
+  function functionx(){
+  window.location='test0.html'
+  localStorage.setItem("total", parseInt(localStorage.getItem("total")) + 1)
+  }
+
 
   function myFunction() {
       document.getElementById("myBtn").innerHTML = "Next word";
@@ -128,10 +133,7 @@
   function mySecondFunction() {
       document.getElementById("myBtn").innerHTML = y;
   }
-  function function0(){
-    localStorage.setItem("total", parseInt(localStorage.getItem("total")) + 1)
-    window.location='test0.html'
-  }
+
   function function1(){
     if(  document.getElementById("button1").innerHTML==e){
       localStorage.setItem("score", parseInt(localStorage.getItem("score")) + 1)
