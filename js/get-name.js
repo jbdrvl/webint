@@ -1,5 +1,6 @@
 var username = localStorage.getItem('username');
 var email = localStorage.getItem('email');
+var bio = localStorage.getItem('bio');
 if (username) {
   try {
     usernameSpans = document.getElementsByClassName('username-span');
@@ -16,5 +17,13 @@ if (email) {
     document.getElementById('email').innerHTML = email;
   } catch(err) {
     console.log("[INFO] no email field on this page.");
+  }
+}
+
+if (bio && bio!=' ') {
+  try {
+    document.getElementById('bio-display').innerHTML = bio;
+  } catch(err) {
+    console.log("[INFO] no bio");
   }
 }

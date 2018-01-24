@@ -24,6 +24,7 @@ var colourIndex = localStorage.getItem("color");
 // on récupère l'élément
 var elmt = document.getElementById("all");
 
+if (!colourIndex) {colourIndex=2;}
 // on modifie son style
 elmt.style.backgroundColor = colors[colourIndex];
 /* SECONDARY COLOR */

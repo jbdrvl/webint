@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>NappyVoc</title>
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/homepage.css" type="text/css"/>
+
+    <!-- Favicon Links -->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/faviconfavicon.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/faviconfavicon-32.png" type="image/png">
+    <link rel="icon" sizes="64x64" href="img/faviconfavicon-64.png" type="image/png">
+    <link rel="icon" sizes="96x96" href="img/faviconfavicon-96.png" type="image/png">
+
+    <!-- Google Font links -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body id="all">
+    <div id="web-title">
+      <h1>NappyVoc</h1>
+    </div>
+
+    <div id="logo">
+      <a href="information.html">
+        <img id="logo-img" src="img/logo2.svg" alt="Nappy's Logo">
+      </a>
+    </div>
+    <div id="bubble">
+      <img class="bubble-m" src="img/bubble.svg" alt="">
+    </div>
+
+    <div class="box" id="login-form">
+      <div id="buttons_container">
+        <button id="signin" name="Submit" value="Login" type="Submit" href="#">Sign In</button>
+        <button id="signup" name="Submit" value="Login" type="Submit" href='#'>Sign Up</button>
+      </div>
+      <div id="login-title">
+        <p id="login-title-p">Welcome back</p>
+      </div>
+      <div id="form-login-container">
+        <div id="username-container">
+          <label id="username_label" for="username">Email address</label>
+          <input type="text" class="input" id="username" />
+        </div>
+
+        <div id="password-container">
+          <label id="password_label" for="password">Password</label>
+          <input type="password" class="input" name="password" id="password" />
+        </div>
+
+          <button id="login" name="Submit" value="Login" type="Submit" onclick="window.location='home.html'">LOGIN</button>
+        </form>
+      </div>
+      <div id="form-signup-container">
+        <div id="email-container">
+          <label id="email_label" for="email">Type your email</label>
+          <input type="text" id="email" />
+        </div>
+        <div id="reemail-container">
+          <label id="reemail_label" for="reemail">Retype your email</label>
+          <input type="text" id="reemail" />
+        </div>
+        <div id="Spassword-container">
+          <label id="spassword_label" for="spassword">Choose a password</label>
+          <input type="password" id="spassword" />
+        </div>
+
+        <div id="SRpassword-container">
+          <label id="srpassword_label" for="srpassword">Retype the password</label>
+          <input type="password" id="srpassword" />
+        </div>
+        <div id="Susername-container">
+          <label id="susername_label" for="reemail">Choose a username</label>
+          <input type="text" id="susername" />
+        </div>
+        <button id="signup-button" class="my-button" name="Submit" value="Login" type="Submit" href='home.html'>SIGNUP</button>
+      </div>
+      <div id="data_login">
+        <p><a href="lost.html">Lost your password ?</a></p>
+      </div>
+    </div>
+
+    <div id="background">
+      <div id="message">
+        <span id="arrow"><i id="cross" class="fa fa-times" aria-hidden="true"></i></span>
+        <p id="alertinfo">Hello</p>
+      </div>
+    </div>
+    <div id="copyright">
+      <p>Copyright © NappyVoc - EURECOM webint project</p>
+    </div>
+
+    <!--SCRIPTS GOES HERE -->
+    <script type="text/jscript" src="js/anime.min.js"></script>
+    <script type="text/jscript" src="js/jquery.min.js"></script>
+    <script type="text/jscript" src="js/color.js"></script>
+    <script type="text/jscript" src="js/tabin.js"></script>
+    <script type="text/jscript" src="js/animation.js"></script>
+    <script>
+      document.getElementById('signup-button').addEventListener("click", function() {
+        localStorage.setItem('profile-pic', 0);
+        localStorage.setItem('bio', ' ');
+        localStorage.setItem("username", document.getElementById('susername').value);
+        localStorage.setItem('email', document.getElementById('email').value);
+        window.location='home.html';
+      });
+    </script>
+  </body>
+</html>
