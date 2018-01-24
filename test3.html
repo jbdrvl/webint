@@ -91,7 +91,8 @@
   var voc = ["Oso", "Kevin", "Casa", "Ciudad", "	Analista Financiero", "Árbitro" , "Abogado", "Basquetbolista","Boxeador", "Leñador", "	Cirujano" ];
   var vocf = ["Ours", "Kevin", "Maison", "Ville", "Analyste Financier", "Arbitre","Avocat", "Basketeur", "Boxeur", "Bûcheron", "Chirurgien" ];
   var i = getRandomIntInclusive(0,voc.length -1);
-  var msg = new SpeechSynthesisUtterance(voc[i]);
+  var y = voc[i]
+  var msg = new SpeechSynthesisUtterance(y);
   window.speechSynthesis.speak(msg);
 
   function functionx(){
@@ -100,7 +101,7 @@
   }
 
   function function2(){
-    window.speechSynthesis.speak(msg);
+    window.speechSynthesis.speak(new SpeechSynthesisUtterance(y));
   }
   document.getElementById("visu").innerHTML = vocf[i];
   var e = document.getElementById("visu").innerHTML;
