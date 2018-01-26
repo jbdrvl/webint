@@ -117,5 +117,14 @@
       };
       firebase.initializeApp(config);
     </script>
+    <script>
+      document.getElementById('signup-button').addEventListener("click", function() {
+        localStorage.setItem('profile-pic', 0);
+        localStorage.setItem('bio', ' ');
+        localStorage.setItem("username", document.getElementById('susername').value);
+        localStorage.setItem('email', document.getElementById('email').value);
+        window.location='home.html';
+      });
+    </script>
   </body>
 </html>
