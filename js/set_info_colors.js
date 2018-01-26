@@ -1,6 +1,6 @@
 var colors = [
-  "#548B34",
-  "#245F88",
+  "#009AAE",
+  "#553256",
   "#ba5536",
   "#777E3F",
   "#80781F",
@@ -11,3 +11,4 @@ var colors = [
 
 $("#first").css("background-color",colors[0]);
 $("#second").css("background-color",colors[1]);
+$("#third").css("background-color",colors[2]);

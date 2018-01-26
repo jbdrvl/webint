@@ -1,6 +1,9 @@
 body{
   background-color: white;
 }
+ul {
+  list-style-type: none;
+}
 .container{
   height: 100%;
   width: 100%;
@@ -17,17 +20,64 @@ body{
     top: 100%;
     left: 0;
 }
+#third{
+  background-color: yellow;
+  position: absolute;
+    top: 200%;
+    left: 0;
+}
 #first h1{
   font-size: 10em;
   margin: 0;
   text-align: center;
   position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
 #first h2{
+  width: 100%;
   font-size: 3em;
   margin: 0;
   text-align: center;
+  position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#first #learning{
+  width: 30%;
+  height: 40%;
+  position: absolute;
+    bottom:5%;
+    left:50%;
+    transform: translate(-50%,0);
+}
+#first img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#second #hands{
+  width: 40%;
+  position: absolute;
+    bottom:0;
+    left:0%;
+}
+#second img{
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: bottom;
+}
+#second #text{
+  position: absolute;
+    right :1em;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+#second #text li{
+  font-size: 1.5em;
+  padding: 1em;
+  font-weight: bold;
 }
