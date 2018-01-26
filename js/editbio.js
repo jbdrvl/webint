@@ -17,6 +17,7 @@ saveButton.addEventListener("click", function() {
   document.getElementById("stats").style.height="auto";
   document.getElementById("last-scores").style.height="100px";
   bioField.innerHTML=bioEditField.value.replace(/[^\w\s\,\.\!\?\:\;\']/gi, ' ');
+  localStorage.setItem('bio', bioEditField.value.replace(/[^\w\s\,\.\!\?\:\;\']/gi, ' '));
   bioEditField.style.display = "none";
   saveButton.style.display = "none";
   editButton.style.display = "block";

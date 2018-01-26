@@ -33,19 +33,30 @@
 <div id="inside">
   <div id="choice">
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-sm-6">
         <div class="col-inner">
-          <button type="button" name="my-words" class="my-button" onclick="window.location='test0.html'">Level 0</button>
+          <table>
+            <tr style="margin-bottom: 10px;">
+              <button type="button" name="my-words" class="my-button" onclick="window.location='test0.html'">Level 0</button>
+            </tr>
+            <br>
+            <tr>
+              <button type="button" name="my-words" class="my-button" onclick="window.location='test1.html'" style="margin-top: 2%;">Level 1</button>
+            </tr>
+          </table>
         </div>
       </div>
-      <div class="col-sm-4" >
+      <div class="col-sm-6">
         <div class="col-inner">
-          <button type="button" name="my-words" class="my-button" onclick="window.location='test1.html'">Level 1</button>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="col-inner">
-          <button type="button" name="other-words" class="my-button" onclick="window.location='test2.html'">Level 2</button>
+          <table>
+            <tr>
+              <button type="button" name="my-words" class="my-button" onclick="window.location='test2.html'">Level 2</button>
+            </tr>
+            <br>
+            <tr>
+              <button type="button" name="my-words" class="my-button" onclick="window.location='test3.html'" style="margin-top: 2%;">Level 3</button>
+            </tr>
+          </table>
         </div>
       </div>
     </div>
@@ -60,11 +71,14 @@
 <div id="copyright">
     <p>Copyright © NappyVoc - EURECOM WebInt project</p>
 </div>
+<script type="text/javascript">
+localStorage.setItem('score', 0);
+localStorage.setItem('total', 0);
 
+</script>
 <script type="text/jscript" src="js/test0.js"></script>
 <script type="text/jscript" src="js/color.js"></script>
 <script type="text/jscript" src="js/anime.min.js"></script>
 <script type="text/jscript" src="js/animation.js"></script>
-<script type="text/jscript" src="js/keep_color.js"></script>
-  </body>
+
 </html>

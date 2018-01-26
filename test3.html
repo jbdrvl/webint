@@ -25,25 +25,34 @@
     </td>
     <td>
       <h1>NappyVoc</h1>
-      <h2>Training Arena - Level 2 </h2>
+      <h2>Training Arena - Level 3 </h2>
     </td>
   </table>
 </header>
 <article>
   <div id="pass" align='center'>
     <div id="pass">
-      <button id="myBtn" type="button" name="Pass" class="my-button" onclick="functionx()"  ></button>
+      <button id="myBtn" type="button" name="Pass" class="my-button" onclick="functionx()" >Next Word</button>
     </div>
   </div>
 
   <div id="choice">
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-4">
         <div class="col-inner">
               <input type="text" name="Word1" id="word1" class="answer_but" placeholder="Answer" required="" autofocus="" align="center"/>
         </div>
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-4">
+        <div class="col-inner">
+          <table>
+            <tr>
+              <button id="Listen" type="button" name="Listen" class="my-button" onclick="function2()">Listen</button>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="col-sm-4">
         <div class="col-inner">
           <table>
             <tr>
@@ -52,7 +61,7 @@
           </table>
         </div>
       </div>
-    </div>
+
   </div>
 
   <article id="score">
@@ -73,49 +82,40 @@
 
 <script>
 
+
   function getRandomIntInclusive(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min +1)) + min;
   }
-
   var voc = ["Oso", "Kevin", "Casa", "Ciudad", "	Analista Financiero", "Árbitro" , "Abogado", "Basquetbolista","Boxeador", "Leñador", "	Cirujano" ];
   var vocf = ["Ours", "Kevin", "Maison", "Ville", "Analyste Financier", "Arbitre","Avocat", "Basketeur", "Boxeur", "Bûcheron", "Chirurgien" ];
   var i = getRandomIntInclusive(0,voc.length -1);
-
-  document.getElementById("myBtn").innerHTML = voc[i];
-
-  var y = document.getElementById("myBtn").innerHTML;
-  var x = document.getElementById("myBtn");
-  x.addEventListener("mouseover", myFunction);
-  x.addEventListener("mouseout", mySecondFunction);
-
-
-  function myFunction() {
-      document.getElementById("myBtn").innerHTML = "Next word";
-  }
-
-  function mySecondFunction() {
-      document.getElementById("myBtn").innerHTML = y;
-  }
-  document.getElementById("visu").innerHTML = vocf[i];
-  var e = document.getElementById("visu").innerHTML;
-  function function1(){
-  if(  document.getElementById("word1").value==e){
-      localStorage.setItem("score", parseInt(localStorage.getItem("score")) + 1)
-      localStorage.setItem("total", parseInt(localStorage.getItem("total")) + 1)
-      window.location='test2.html'
-    } else {
-      document.getElementById("myBtn").innerHTML = e;
-    }
-  }
+  var y = voc[i]
+  var msg = new SpeechSynthesisUtterance(y);
+  window.speechSynthesis.speak(msg);
 
   function functionx(){
-  window.location='test2.html'
+  window.location='test3.html'
   localStorage.setItem("total", parseInt(localStorage.getItem("total")) + 1)
   }
 
+  function function2(){
+    window.speechSynthesis.speak(new SpeechSynthesisUtterance(y));
+  }
+  document.getElementById("visu").innerHTML = vocf[i];
+  var e = document.getElementById("visu").innerHTML;
 
+
+  function function1(){
+    if(  document.getElementById("word1").value==e){
+      localStorage.setItem("score", parseInt(localStorage.getItem("score")) + 1)
+      localStorage.setItem("total", parseInt(localStorage.getItem("total")) + 1)
+      window.location='test3.html'
+      } else {
+      document.getElementById("myBtn").innerHTML = e;
+      }
+    }
   document.getElementById("visu").innerHTML = ("score:  " + localStorage.getItem('score') + "/" + localStorage.getItem('total') );
 </script>
 <script type="text/jscript" src="js/test0.js"></script>

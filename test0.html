@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
   </head>
-  <body>
+<body>
 
 
 <header>
@@ -35,9 +35,7 @@
 
 <article>
   <div id="pass" align='center'>
-    <div id="pass">
-      <button id="myBtn" type="button" name="Pass" class="my-button" onclick="window.location='test0.html'" ></button>
-    </div>
+      <button id="myBtn" type="button" name="Pass" class="my-button" onclick="functionx()" ></button>
   </div>
   <div id="choice">
     <div class="row">
@@ -45,11 +43,11 @@
         <div class="col-inner">
           <table>
             <tr style="margin-bottom: 10px;">
-              <button id="button1" type="button" name="button1" class="my-button" >Kevin</button>
+              <button id="button1" type="button" name="button1" class="my-button" onclick="function1()">Kevin</button>
             </tr>
             <br>
             <tr>
-              <button id="button2" type="button" name="button2" class="my-button"style="margin-top: 2%;">Ours</button>
+              <button id="button2" type="button" name="button2" class="my-button"style="margin-top: 2%;" onclick="function2()">Ours</button>
             </tr>
           </table>
         </div>
@@ -58,20 +56,23 @@
         <div class="col-inner">
           <table>
             <tr>
-              <button id="button3" type="button" name="button3" class="my-button">Maison</button>
+              <button id="button3" type="button" name="button3" class="my-button" onclick="function3()" >Maison</button>
             </tr>
             <br>
             <tr>
-              <button id="button4" type="button" name="button4" class="my-button"style="margin-top: 2%;">Chaise</button>
+              <button id="button4" type="button" name="button4" class="my-button"style="margin-top: 2%;" onclick="function4()">Chaise</button>
             </tr>
           </table>
         </div>
       </div>
     </div>
   </div>
+  <article id="score">
+      <p id='visu'>test</p>
+  </article>
   <div id="home-b">
     <div id="home-b-button">
-      <button type="button" name="my-profile" class="my-button" onclick="window.location='training_arena_home.html'">Home Arena</button>
+      <button type="button" name="my-profile" class="my-button" onclick="window.location='training_arena_home.html'" >Home Arena</button>
     </div>
   </div>
 </article>
@@ -88,12 +89,13 @@
     return Math.floor(Math.random() * (max - min +1)) + min;
   }
 
-  var voc = ["Oso", "Kevin", "Casa", "Ciudad", "	analista financiero", "árbitro" , "abogado", "basquetbolista","boxeador", "leñador", "	cirujano" ];
-  var vocf = ["Ours", "Kevin", "Maison", "Ville", "analyste financier", "arbitre","avocat", "basketeur", "boxeur", "bûcheron", "chirurgien" ];
+  var voc = ["Oso", "Kevin", "Casa", "Ciudad", "	Analista Financiero", "Árbitro" , "Abogado", "Basquetbolista","Boxeador", "Leñador", "	Cirujano" ];
+  var vocf = ["Ours", "Kevin", "Maison", "Ville", "Analyste Financier", "Arbitre","Avocat", "Basketeur", "Boxeur", "Bûcheron", "Chirurgien" ];
   var i = getRandomIntInclusive(0,voc.length -1);
 
   document.getElementById("myBtn").innerHTML = voc[i];
-
+  document.getElementById("visu").innerHTML = vocf[i];
+  var e = document.getElementById("visu").innerHTML;
   var l= [i,getRandomIntInclusive(0,voc.length -1),getRandomIntInclusive(0,voc.length -1),getRandomIntInclusive(0,voc.length -1)]
 
   function shuffle(a) {
@@ -118,6 +120,11 @@
   x.addEventListener("mouseover", myFunction);
   x.addEventListener("mouseout", mySecondFunction);
 
+  function functionx(){
+  window.location='test0.html'
+  localStorage.setItem("total", parseInt(localStorage.getItem("total")) + 1)
+  }
+
 
   function myFunction() {
       document.getElementById("myBtn").innerHTML = "Next word";
@@ -127,11 +134,51 @@
       document.getElementById("myBtn").innerHTML = y;
   }
 
+  function function1(){
+    if(  document.getElementById("button1").innerHTML==e){
+      localStorage.setItem("score", parseInt(localStorage.getItem("score")) + 1)
+      localStorage.setItem("total", parseInt(localStorage.getItem("total")) + 1)
+      window.location='test0.html'
+    } else {
+      document.getElementById("myBtn").innerHTML = e;
+
+    }
+  }
+  function function2(){
+  if(  document.getElementById("button2").innerHTML==e){
+    localStorage.setItem("score", parseInt(localStorage.getItem("score")) + 1)
+    localStorage.setItem("total", parseInt(localStorage.getItem("total")) + 1)
+    window.location='test0.html'
+  } else {
+    document.getElementById("myBtn").innerHTML = e;
+
+  }
+}
+  function function3(){
+    if(  document.getElementById("button3").innerHTML==e){
+      localStorage.setItem("score", parseInt(localStorage.getItem("score")) + 1)
+      localStorage.setItem("total", parseInt(localStorage.getItem("total")) + 1)
+      window.location='test0.html'
+    } else {
+      document.getElementById("myBtn").innerHTML = e;
+
+    }
+  }
+  function function4(){
+      if(  document.getElementById("button3").innerHTML==e){
+        localStorage.setItem("score", parseInt(localStorage.getItem("score")) + 1)
+        localStorage.setItem("total", parseInt(localStorage.getItem("total")) + 1)
+        window.location='test0.html'
+      } else {
+        document.getElementById("myBtn").innerHTML = e;
+      }
+    }
+    document.getElementById("visu").innerHTML = ("score:  " + localStorage.getItem('score') + "/" + localStorage.getItem('total') );
 </script>
 <script type="text/jscript" src="js/test0.js"></script>
 <script type="text/jscript" src="js/color.js"></script>
 <script type="text/jscript" src="js/anime.min.js"></script>
 <script type="text/jscript" src="js/animation.js"></script>
-<script type="text/jscript" src="js/keep_color.js"></script>
+
   </body>
 </html>

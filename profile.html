@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <title>NappyVoc - My Profile</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/14192563b5.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/profile-style.css">
-    <script src="https://use.fontawesome.com/14192563b5.js"></script>
     <!-- Favicon Links -->
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/faviconfavicon.png" type="image/png">
@@ -23,17 +23,21 @@
   <body>
     <header>
       <table>
-        <td class="logo">
-          <img id="logo-img" src="img/logo2.svg" alt="NappyVoc Logo">
-        </td>
-        <td>
-          <h1>My NappyVoc Profile</h1>
-        </td>
+        <tbody>
+          <tr>
+            <td class="logo">
+              <img id="logo-img" src="img/logo2.svg" alt="NappyVoc Logo">
+            </td>
+            <td>
+              <h1 id="logo-title">My NappyVoc Profile</h1>
+            </td>
+          </tr>
+        </tbody>
       </table>
     </header>
     <div id="content">
-      <div class="row">
-        <div class="col-md-4" id="stats">
+      <article class="row">
+        <section class="col-md-4" id="stats">
           <div class="col-inner">
             <div class="col-title">
               <h2>Stats</h2>
@@ -48,28 +52,30 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col col-md-4" id="id-card">
+        </section>
+        <section class="col col-md-4" id="id-card">
           <div class="col-inner">
             <div class="col-title">
               <h2>ID Card</h2>
             </div>
             <div class="col-content">
               <table>
-                <tr>
-                  <td>
-                    <img id="profile-pic" src="https://i.pinimg.com/564x/9e/81/2d/9e812de502edf6c0e190a79fe332fe45--female-faces-profile-pictures.jpg" alt="Profile Picture">
-                    <div id="user-pic-outter"><i id="user-pic" class="fa fa-user fa-5x"></i></div>
-                  </td>
-                  <td id="user-infos" class="sec-colors">
-                    <h3>Username: <span id="username" class="username-span">username</span></h3>
-                    <h3>Rank: <span id="rank">1st</span></h3>
-                  </td>
-                </tr>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img id="profile-pic" src="none" alt="Profile Picture">
+                      <div id="user-pic-outter"><i id="user-pic" class="fa fa-user fa-5x"></i></div>
+                    </td>
+                    <td id="user-infos" class="sec-colors">
+                      <h3>Username: <span id="username" class="username-span">username</span></h3>
+                      <h3>Rank: <span id="rank">1st</span></h3>
+                    </td>
+                  </tr>
+                </tbody>
               </table>
               <input type="file" name="new-pp" id="new-pp">
               <div id="bio" class="sec-colors">
-                <h3>Email Address: <span id="email">emma.watson@email.com</span></h3>
+                <h3>Email Address: <span id="email">your email address</span></h3>
                 <h3 id="bio-title">Biography:</h3>
                 <p id="bio-display">Write a few words to describe yourself!<br/>Who are you? What language do you want to learn with NappyVoc?<br/>What do you like to do for fun? Ready to learn?</p>
                 <textarea name="bio-field" id="bio-edit-field"></textarea>
@@ -78,8 +84,8 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col col-md-4" id="last-scores">
+        </section>
+        <section class="col col-md-4" id="last-scores">
           <div class="col-inner">
             <div class="col-title">
               <h2>Last Scores</h2>
@@ -88,70 +94,70 @@
               <nav>
                 <ul id="scores-scroll">
                   <li>
-                    <div class="quizz-score">
+                    <article class="quizz-score">
                       <h3 class="quizz-infos sec-colors"><span class="language">Spanish</span> &gt; <span class="quizz-name">Kitchen Voc</span></h3>
                       <p class="date">15-12-17 1:23pm</p>
                       <p class="score-infos">Score: <span class="score">89%</span></p>
-                    </div>
+                    </article>
                   </li>
                   <li>
-                    <div class="quizz-score">
+                    <article class="quizz-score">
                       <h3 class="quizz-infos sec-colors"><span class="language">Spanish</span> &gt; <span class="quizz-name">Family Voc</span></h3>
                       <p class="date">15-12-17 11:46am</p>
                       <p class="score-infos">Score: <span class="score">75%</span></p>
-                    </div>
+                    </article>
                   </li>
                   <li>
-                    <div class="quizz-score">
+                    <article class="quizz-score">
                       <h3 class="quizz-infos sec-colors"><span class="language">Arabic</span> &gt; <span class="quizz-name">Presentation</span></h3>
                       <p class="date">12-12-17 11:20am</p>
                       <p class="score-infos">Score: <span class="score">67%</span></p>
-                    </div>
+                    </article>
                   </li>
                   <li>
-                    <div class="quizz-score">
+                    <article class="quizz-score">
                       <h3 class="quizz-infos sec-colors"><span class="language">French</span> &gt; <span class="quizz-name">La Maison</span></h3>
                       <p class="date">10-12-17 3:46pm</p>
                       <p class="score-infos">Score: <span class="score">95%</span></p>
-                    </div>
+                    </article>
                   </li>
                   <li>
-                    <div class="quizz-score">
+                    <article class="quizz-score">
                       <h3 class="quizz-infos sec-colors"><span class="language">Arabic</span> &gt; <span class="quizz-name">Presentation</span></h3>
                       <p class="date">12-12-17 11:20am</p>
                       <p class="score-infos">Score: <span class="score">67%</span></p>
-                    </div>
+                    </article>
                   </li>
                   <li>
-                    <div class="quizz-score">
+                    <article class="quizz-score">
                       <h3 class="quizz-infos sec-colors"><span class="language">French</span> &gt; <span class="quizz-name">La Maison</span></h3>
                       <p class="date">10-12-17 3:46pm</p>
                       <p class="score-infos">Score: <span class="score">95%</span></p>
-                    </div>
+                    </article>
                   </li>
                 </ul>
               </nav>
             </div>
           </div>
-        </div>
-      </div>
-      <div id="go-home">
+        </section>
+      </article>
+      <article id="go-home">
         <div id="go-home-button">
           <button type="button" name="go-home" class="my-button" onclick="window.location='home.html'">Back Home</button>
         </div>
-      </div>
+      </article>
     </div>
     <footer id="copyright">
       <p>Copyright © NappyVoc - EURECOM WebInt project</p>
     </footer>
     <!--<script type="text/jscript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
-    <script type="text/jscript" src="js/keep_color.js"></script>
-    <script type="text/jscript" src="js/editbio.js"></script>
-    <script type="text/jscript" src="js/graph.js"></script>
-    <script type="text/jscript" src="js/get-name.js"></script>
-    <script type="text/jscript" src="js/anime.min.js"></script>
-    <script type="text/jscript" src="js/profile-pic.js"></script>
-    <script type="text/jscript" src="js/animation.js"></script>
-    <script type="text/javascript" src="js/profile-height.js"></script>
+    <script src="js/keep_color.js"></script>
+    <script src="js/editbio.js"></script>
+    <script src="js/graph.js"></script>
+    <script src="js/get-name.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/profile-pic.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/profile-height.js"></script>
   </body>
 </html>

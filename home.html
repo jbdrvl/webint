@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home-style.css">
+    <script src="https://use.fontawesome.com/14192563b5.js"></script> <!--Font awesome icons-->
     <!-- Favicon Links -->
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/faviconfavicon.png" type="image/png">
@@ -20,43 +21,49 @@
   </head>
   <body>
     <header style="float:right">
-      Log out
+      <h3 id="logout">Log out<i class="fa fa-sign-out fa-1x" aria-hidden='true'></i></h3>
     </header>
-    <div class="logo">
+    <article class="logo">
       <img id="logo-img" src="img/logo2.svg" alt="NappyVoc Logo">
-    </div>
-    <div id="web-title">
+    </article>
+    <article id="web-title">
       <h1>Welcome Home, <span class="username-span">my friend</span>!</h1>
-    </div>
-    <div id="choice">
+    </article>
+    <article id="choice">
       <div class="row">
-        <div class="col-sm-6">
+        <section class="col-md-6">
           <div class="col-inner">
             <button type="button" name="my-words" class="my-button" onclick="window.location='mywords.html'">My VocSheets</button>
           </div>
-        </div>
-        <div class="col-sm-6">
+        </section>
+        <section class="col-md-6">
           <div class="col-inner">
             <button type="button" name="other-words" class="my-button">Browse Other Words</button>
           </div>
-        </div>
+        </section>
       </div>
-    </div>
-    <div id="my-profile">
+    </article>
+    <article id="my-profile">
       <div id="my-profile-button">
         <button type="button" name="my-profile" class="my-button" onclick="window.location='profile.html'">My Profile</button>
       </div>
-    </div>
+    </article>
     <footer id="copyright">
       <p>Copyright © NappyVoc - EURECOM WebInt project</p>
     </footer>
     <script type="text/javascript">
       localStorage.setItem("tab",0);
     </script>
-    <script type="text/jscript" src="js/color.js"></script>
-    <script type="text/jscript" src="js/anime.min.js"></script>
-    <script type="text/jscript" src="js/animation.js"></script>
-    <script type="text/jscript" src="js/keep_color.js"></script>
-    <script type="text/jscript" src="js/get-name.js"></script>
+    <script src="js/color.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/keep_color.js"></script>
+    <script src="js/get-name.js"></script>
+    <script type="text/javascript">
+      document.getElementById("logout").addEventListener("click", function() {
+        localStorage.clear();
+        window.location="index.html";
+      });
+    </script>
   </body>
 </html>
