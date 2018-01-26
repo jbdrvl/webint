@@ -81,3 +81,23 @@ ul {
   padding: 1em;
   font-weight: bold;
 }
+#third #logo{
+  font-size: 3em;
+  text-align: center;
+}
+iframe{
+  position: relative;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+#copyright{
+  width: 100%;
+  position: absolute;
+  top: 93%;
+  left: 0;
+  display: table;
+}
+#copyright p {
+  text-align: center;
+}
